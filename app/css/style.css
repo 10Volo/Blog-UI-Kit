@@ -10,6 +10,11 @@ body {
 section {
 	padding: 20px;
 }
+
+/****************************************************/
+
+/*User image and name*/
+
 .post-author {
 	width: auto;
 	display: inline-block;
@@ -39,6 +44,56 @@ section {
 	border-radius: 50%;
 	position: absolute;
 }
+
+/**********************************************************/
+
+/*Date*/
+
+.post-date {
+	color: #c1c1c1;
+	font-size: 14px;
+	/*font-weight: bold;*/
+}
+.post-date p {
+	display: inline-block;
+}
+.circle {
+	/*background-color: #40e0d0;*/
+	background-color: #ffdc5a;
+	/*background-color: #c1c1c1;*/
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+/**************************************************/
+
+.page-top {
+	background-position: center;
+	background-size: cover;
+	background-image: url(../img/gradient-sea.jpg);
+	height: 200px;
+	margin-bottom: 50px;
+}
+
+/******************************************************/
+
+/*Card*/
+
+.card {
+	overflow: hidden;
+	/*min-height: 350px;*/
+	height: auto;
+	width: 100%;
+	border-radius: 4px;
+}
+.card-top {
+	height: auto;
+	/*padding: 15px;*/
+	position: relative;
+}
 .card-options {
 	position: absolute;
 	right: 0px;
@@ -52,32 +107,6 @@ section {
 .card-options:hover span.options-icon {
 	background-image: url('../img/more (1).png');
 }
-.post-date {
-	color: #c1c1c1;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-
-.page-top {
-	background-position: center;
-	background-size: cover;
-	background-image: url(../img/gradient-sea.jpg);
-	height: 200px;
-	margin-bottom: 50px;
-}
-.card {
-	overflow: hidden;
-	/*min-height: 350px;*/
-	height: auto;
-	width: 100%;
-	border-radius: 4px;
-}
-.card-top {
-	height: auto;
-	/*padding: 15px;*/
-	position: relative;
-}
 .card-cover {
 	height: 170px;
 	/*background-color: #40e0d0;*/
@@ -88,28 +117,31 @@ section {
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 15px;
+	padding: 20px;
 	position: relative;
 }
 .card-controll {
 	border-top: 1px solid #d6d6d6;
-	/*height: 41px;*/
-	/*padding: 12px 15px;*/
 }
-.card-controll div a {
-	text-decoration: none;
+.card-controll div button {
+	cursor: pointer;
 	color: #c1c1c1;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-radius: 0px;
 }
 .card-title {
 	padding: 13px 0px;
-	/*background-color: red;*/
 }
 .card-title h2 {
 	font-size: 1.8em;
+	display: inline-block;
 }
 .card-title h2 a {
 	color: #707070;
-	/*color: black;*/
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -155,10 +187,8 @@ section {
 	transition: all .2s;
 	color: #c1c1c1;
 	font-weight: bold;
-	/*font-size: 14px;*/
 }
-.post-like span.post-like-wrap, .post-comment span.post-comment-wrap {
-	display: inline-block;
+.post-like button.post-like-wrap, .post-comment button.post-comment-wrap {
 	margin: 15px;
 }
 .post-comment {
@@ -169,7 +199,6 @@ section {
 	background-image: url('../img/chat.png');
 }
 .post-like {
-	transition: .3s;
 	cursor: pointer;
 }
 .post-like:hover span.like-icon{
@@ -179,8 +208,9 @@ section {
 	float: right;
 	margin: 15px;
 	height: 17px;
-	/*opacity: .7;*/
 }
+
+/*******************************************/
 
 @media screen and (max-width: 780px) { 
 	section {
