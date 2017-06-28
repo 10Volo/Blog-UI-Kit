@@ -15,6 +15,7 @@
 .col-12,.dimmed{width:100%}
 .dimmed{background-color:rgba(0,0,0,.7);height:100vh;position:fixed;z-index:5}
 .box{box-shadow:0 2px 10px 0 rgba(0,0,0,.16),0 2px 25px 0 rgba(0,0,0,.12);background-color:#fff}
+.no-select{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
 .icon{width:16px;height:16px;background-size:cover;background-position:center;margin-bottom:-2px}
 .like-icon{background-image:url(../img/like-active.png)}
 .view-icon{background-image:url(../img/eye.png);width:20px;margin-right:3px}
