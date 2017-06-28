@@ -45,7 +45,7 @@
 	margin-bottom: -2px;
 }
 .like-icon {
-	background-image: url(../img/like.png);
+	background-image: url(../img/like-active.png);
 }
 .view-icon {
 	background-image: url(../img/eye.png);
@@ -53,11 +53,11 @@
 	margin-right: 3px;
 }
 .comment-icon {
-	background-image: url('../img/chat (1).png');
+	background-image: url('../img/chat-black.png');
 	margin-right: 3px;
 }
 .options-icon {
-	background-image: url('../img/more.png');
+	background-image: url('../img/more-black.png');
 	height: 22px;
 	margin-top: 19px;
 } 

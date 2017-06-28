@@ -16,10 +16,10 @@
 .dimmed{background-color:rgba(0,0,0,.7);height:100vh;position:fixed;z-index:5}
 .box{box-shadow:0 2px 10px 0 rgba(0,0,0,.16),0 2px 25px 0 rgba(0,0,0,.12);background-color:#fff}
 .icon{width:16px;height:16px;background-size:cover;background-position:center;margin-bottom:-2px}
-.like-icon{background-image:url(../img/like.png)}
+.like-icon{background-image:url(../img/like-active.png)}
 .view-icon{background-image:url(../img/eye.png);width:20px;margin-right:3px}
-.comment-icon{background-image:url('../img/chat (1).png');margin-right:3px}
-.options-icon{background-image:url(../img/more.png);height:22px;margin-top:19px}
+.comment-icon{background-image:url(../img/chat-black.png);margin-right:3px}
+.options-icon{background-image:url(../img/more-black.png);height:22px;margin-top:19px}
 .button{cursor:pointer;font-size:16px;border:none;color:#fff;background-color:#cac9cd;height:34px;line-height:34px;padding:0 16px;text-align:center;text-decoration:none;outline:0;transition:.2s;font-weight:700}
 .button:hover{background-color:#b5b4b8}
 .button.big{font-size:26px;height:44px;padding:0 20px}
