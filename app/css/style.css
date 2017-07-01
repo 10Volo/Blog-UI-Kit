@@ -4,10 +4,11 @@
 	margin: 0;
 }
 body {
-	background-color: #f1f9fb;
+	background-color: #f1f1f1;
 	font-family: 'Roboto', sans-serif;
 }
 section {
+	max-width: 1440px;
 	padding: 20px;
 }
 
@@ -18,7 +19,7 @@ section {
 .post-author {
 	width: auto;
 	display: inline-block;
-	margin: 15px 15px;
+	margin: 10px 15px;
 }
 .post-author a {
 	display: inline-block;
@@ -97,12 +98,13 @@ section {
 .card-options {
 	position: absolute;
 	right: 0px;
+	top: 0px;
 	cursor: pointer;
 	width: 50px;
-	height: 60px;
+	height: 50px;
 	display: inline-block;
 	text-align: center;
-	line-height: 60px;
+	line-height: 50px;
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -120,7 +122,7 @@ section {
 	box-shadow: -2px -1px 20px 0px rgba(0, 0, 0, 0.2), 2px 10px 20px 0px rgba(0, 0, 0, 0.2);
 	background-color: white;
 	position: absolute;
-	top: 50px;
+	top: 40px;
 	right: -10px;
 	overflow: hidden;
 	opacity: 0;
@@ -137,23 +139,25 @@ section {
 	color: grey;
 }
 .card-dropdown a:hover {
-	background-color: #eee;
+	background-color: #f1f1f1;
 }
 .card-cover {
 	height: 170px;
-	background-color: #eee;
+	/*background-color: #eee;*/
 	background-position: center;
 	background-size: cover;
 	background-image: url(../img/front-end-image.jpg);
+	/*display: none;*/
 }
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 20px;
+	padding: 15px;
 	position: relative;
 }
 .card-controll {
 	border-top: 1px solid #d6d6d6;
+	height: 40px;
 }
 .card-controll div button {
 	cursor: pointer;
@@ -214,7 +218,7 @@ section {
 
 .post-like, .post-view, .post-comment {
 	display: inline-block;
-	height: 48px;
+	height: 40px;
 	min-width: 40px;
 	width: auto;
 	transition: all .2s;
@@ -222,7 +226,7 @@ section {
 	font-weight: bold;
 }
 .post-like button.post-like-wrap, .post-comment button.post-comment-wrap {
-	margin: 15px;
+	margin: 10px 15px;
 }
 .post-comment {
 	cursor: pointer;
@@ -251,7 +255,7 @@ section {
 }
 .post-view {
 	float: right;
-	margin: 15px;
+	margin: 10px 15px;
 	height: 17px;
 }
 
