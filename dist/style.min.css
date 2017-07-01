@@ -33,16 +33,17 @@ section{max-width:1440px;padding:20px}
 .card-title h2 a:hover{text-decoration:underline}
 .tag a,.tag a:hover{text-decoration:none}
 .card-tags{width:100%}
-.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;color:#fff;border-radius:3px;margin-right:3px;background-color:#40e0d0}
+.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;color:grey;font-weight:700;border-radius:3px;margin-right:3px;background-color:#eee}
 .post-comment button.post-comment-wrap,.post-like button.post-like-wrap,.post-view{margin:10px 15px}
 .tag a{color:inherit}
 .post-comment,.post-like,.post-view{display:inline-block;height:40px;min-width:40px;width:auto;transition:all .2s;color:#c1c1c1;font-weight:700}
 .post-comment{float:right}
 .post-comment span.comment-icon{opacity:.25;transition:.2s}
 .post-comment:hover span.comment-icon{opacity:.6}
-.post-like span.like-icon{transition:all .2s ease-in-out;transform:scale(1)}
-.post-like:hover span.like-icon{transition:all .2s ease-in-out;transform:scale(1.25)}
-.post-like:active span.like-icon{background-image:url(../img/like-active.png)}
+.post-like span.like-icon{transition:all .15 ease-in-out;transform:scale(1);opacity:1}
+.post-like.liked span.like-icon,.post-like:hover span.like-icon{transition:all .15s ease-in-out}
+.post-like.presed span.like-icon{transition:all .15s ease-in-out;transform:scale(1.5);opacity:0}
+.post-like.liked span.like-icon{background-image:url(../img/like-active.png)}
 .post-view{float:right;height:17px}
 @media screen and (max-width:780px){section{padding:5px}
 .col-3{width:100%}

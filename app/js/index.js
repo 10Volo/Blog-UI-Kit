@@ -1,6 +1,17 @@
 var optionButton = document.querySelectorAll('.card-options');
 var dropdowns = document.querySelectorAll('.card-dropdown');
+var likeButtons = Array.from(document.querySelectorAll('.post-like'));
 
+likeButtons.forEach(function(like){
+	like.addEventListener('click', function(e){
+		like.classList.add('presed');
+		// like.classList.toggle('liked');
+		setTimeout(function(){
+			like.classList.remove('presed');
+			like.classList.toggle('liked');
+		}, 300);
+	});
+});
 
 function closeDropdowns(){
 	var dropdownsArray = Array.from(dropdowns);
