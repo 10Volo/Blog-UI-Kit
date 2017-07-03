@@ -8,7 +8,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 section {
-	max-width: 1440px;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 80%;
 	padding: 20px;
 }
 aside {
@@ -29,16 +31,19 @@ aside {
 .post-author a {
 	display: inline-block;
 	font-weight: bold;
-	color: #1ca7ea;
+	/*color: #1ca7ea;*/
+	color: #9a9a9a;
 }
 .post-author a:hover .post-author-name {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: #737373;
 }
 .post-author-name {
 	display: inline-block;
 	height: 30px;
 	line-height: 30px;
-	margin-left: 40px; 	
+	margin-left: 40px;
+	transition: all .2s; 	
 }
 .post-author-avatar {
 	height: 30px;
@@ -46,7 +51,8 @@ aside {
 	background-position: center;
 	background-size: cover;
 	/*background-color: #d6d6d6;*/
-	background-image: url('../img/user.png');
+	/*background-image: url('../img/user.png');*/
+	background-image: url('../img/gradient-sea.jpg');
 	border-radius: 50%;
 	position: absolute;
 }
@@ -87,6 +93,10 @@ aside {
 
 /*Card*/
 
+
+.card-wrap {
+	padding: 20px;
+}
 .card {
 	/*overflow: hidden;*/
 	/*min-height: 350px;*/
@@ -98,6 +108,7 @@ aside {
 .card-top {
 	height: auto;
 	/*padding: 15px;*/
+	/*display: none;*/
 }
 .card-options {
 	position: absolute;
@@ -153,7 +164,7 @@ aside {
 	/*background-color: #eee;*/
 	background-position: center;
 	background-size: cover;
-	background-image: url(../img/front-end-image.jpg);
+	background-image: url(../img/shameless7.jpg);
 	/*display: none;*/
 }
 .card-info {
@@ -182,7 +193,7 @@ aside {
 	padding: 10px 0px;
 }
 .card-title h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	display: inline-block;
 }
 .card-title h2 a {
@@ -278,7 +289,119 @@ aside {
 	height: 17px;
 }
 
+/*****************************************/
+
+.navigation-top, .navigation-left {
+	z-index: 9999;
+}
+.navigation-top {
+	height: 80px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+}
+.navigation-links {
+	/*border: 1px solid black;*/
+	height: 80px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+.logo {
+	display: inline-block;
+	height: 80px;
+	width: auto;	
+	margin-left: 10px;
+	font-size: 22px;
+	line-height: 80px;
+}
+.logo a {
+	color: #40e0d0;
+	text-decoration: none;
+}
+.desktop-nav {
+	display: inline-block;
+	height: 80px;
+	width: calc(100% - 185px);
+	/*background-color: #eee;*/
+	float: right;
+	padding: 0px 20px;
+}
+.desktop-nav ul li {
+	display: inline-block;
+}
+.desktop-nav .desktop-nav-link {
+	display: inline-block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #9a9a9a;
+	background-color: white;
+	height: 80px;
+	line-height: 80px;
+	padding: 0px 15px;
+	transition: .2s ease-in-out;
+} 
+.desktop-nav .desktop-nav-link:hover {
+	color: #737373;
+}
+
+.desktop-nav .desktop-nav-link.active {
+	border-bottom: 5px solid #40e0d0;
+	color: #737373;
+}
+
+
+.mobile-nav {
+	display: none;
+}
+
+.navigation-left {
+	height: 100vh;
+	width: 250px;
+	background-color: white;
+	position: fixed;
+	display: none;
+}
+
+.main-content {
+	padding-top: 80px;
+}
+.content-header {
+	background-position: center;
+	background-size: cover;
+	background-image: url(../img/gradient-sea.jpg);
+	height: 400px;
+	width: 100%;
+} 
+.content-controll {
+	height: 100px;
+	width: 100%;
+} 
+.content {
+	width: 80%;
+	margin: 0 auto;
+	z-index: 0;
+	height: 100vh;
+	/*border: 1px solid grey;*/
+}
+
+
 /*******************************************/
+
+@media screen and (max-width: 1200px) { 
+	
+	section {
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 960px) { 
+
+}
 
 @media screen and (max-width: 780px) { 
 	section {
@@ -290,5 +413,7 @@ aside {
 	.col-3 { width: 100%; }
 	.col-4 { width: 100%; }
 	.col-9 { width: 100%; }
-
+	.card-wrap {
+		padding: 0px;
+	}
 }
