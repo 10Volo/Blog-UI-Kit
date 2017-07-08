@@ -17,6 +17,13 @@ aside {
 	height: 500px;
 
 }
+.divider {
+	/*width: 100%;*/
+	width: 100px;
+	height: 3px;
+	background-color: #41e4de;
+	/*background-color: #eee;*/
+}
 
 /****************************************************/
 
@@ -410,7 +417,6 @@ aside {
 }
 .post-header {
 	padding: 50px 30px;
-	padding-bottom: 30px;
 }
 .post-date-wrapper {
 	float: right;
@@ -422,16 +428,20 @@ aside {
 	font-size: 16px;
 }
 .post-title {
-	margin-top: 20px;
+	margin-top: 40px;
 	/*padding: 30px;*/
 	font-size: 35px;
 	color: grey;
 }
 .post-tags {
-	margin-top: 20px;
+	margin-top: 10px;
+	/*display: none;*/
 }
 .post-body {
 	padding: 0px 30px;
+}
+.post-body .divider {
+	margin-bottom: 50px;
 }
 .post-body p {
 	color: #737373;
@@ -485,11 +495,17 @@ aside {
 	.post-cover {
 		height: 400px;
 	}
+	.post-title {
+		margin-top: 30px;
+	}
 	.post-header {
-		padding: 30px 15px;
+		padding: 30px 15px 40px 15px;
 	}
 	.post-body {
 		padding: 0px 15px;
+	}
+	.post-body .divider {
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 530px) { 
@@ -501,7 +517,7 @@ aside {
 		height: 200px;
 	}
 	.post-title {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.post-date-wrapper {
 		padding-top: 8px; 
