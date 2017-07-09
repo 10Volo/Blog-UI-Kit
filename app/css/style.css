@@ -58,7 +58,7 @@ aside {
 	background-size: cover;
 	/*background-color: #d6d6d6;*/
 	/*background-image: url('../img/user.png');*/
-	background-image: url('../img/gradient-sea.jpg');
+	background-image: url('../img//gradient-sea.jpg');
 	border-radius: 50%;
 	position: absolute;
 }
@@ -170,7 +170,7 @@ aside {
 	/*background-color: #eee;*/
 	background-position: center;
 	background-size: cover;
-	background-image: url(../img/shameless7.jpg);
+	background-image: url(../img/wallpaper-1bae1.jpg);
 	/*display: none;*/
 	/*margin: 0px 15px;*/
 }
@@ -403,7 +403,7 @@ aside {
 .post-cover {
 	width: 100%;
 	height: 350px;
-	background-image: url(../img/shameless7.jpg);
+	background-image: url(../img/wallpaper-1bae1.jpg);
 	background-position: center;
 	background-size: cover;
 	/*display: none;*/
@@ -416,12 +416,24 @@ aside {
 	/*margin-top: -250px;*/
 }
 .post-header {
-	padding: 50px 30px;
+	padding: 40px 30px;
+}
+.post-header .post-author {
+	height: 50px;
+}
+.post-header .post-author-name {
+	height: 50px;
+	line-height: 50px;
+	margin-left: 60px;
+}
+.post-header .post-author-avatar {
+	height: 50px;
+	width: 50px;
 }
 .post-date-view-wrapper {
 	float: right;
 	/*padding: 10px 15px;*/
-	padding-top: 5px; 
+	padding-top: 15px; 
 
 }
 .post-date-view-wrapper .post-date {
@@ -451,8 +463,6 @@ aside {
 	color: grey;
 }
 .post-tags {
-	display: inline-block;
-	max-width: 320px;
 	margin-top: 10px;
 	/*display: none;*/
 }
@@ -548,7 +558,7 @@ aside {
 		margin-top: 2px;
 	}
 	.post-date-view-wrapper {
-		padding-top: 8px; 
+		padding-top: 17px; 
 
 	}
 	.post-date-view-wrapper .post-date p {

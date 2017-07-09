@@ -27,7 +27,7 @@ aside{width:100%;height:500px}
 .card-dropdown a{display:block;padding:12px 15px;color:grey}
 .card-title h2,.tag{display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
-.card-cover{height:170px;background-image:url(../img/shameless7.jpg)}
+.card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .card-info{height:auto;padding:15px 15px 10px;position:relative}
 .navigation-left,.navigation-top{position:fixed;background-color:#fff}
 .card-controll{height:40px;text-align:center}
@@ -69,17 +69,20 @@ aside{width:100%;height:500px}
 .content-controll{height:100px;width:100%}
 .content{width:80%;margin:0 auto;z-index:0;height:100vh}
 .post-wrapper{background-color:#fff}
-.post-cover{width:100%;height:350px;background-image:url(../img/shameless7.jpg)}
+.post-cover{width:100%;height:350px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .post{height:auto;width:70%;border:1px solid #eee}
-.post-header{padding:50px 30px}
-.post-date-view-wrapper{float:right;padding-top:5px}
+.post-header{padding:40px 30px}
+.post-header .post-author{height:50px}
+.post-header .post-author-name{height:50px;line-height:50px;margin-left:60px}
+.post-header .post-author-avatar{height:50px;width:50px}
+.post-date-view-wrapper{float:right;padding-top:15px}
 .post-date-view-wrapper .post-date{display:inline-block;border-left:2px solid #eee;padding-left:8px}
 .post-date-view-wrapper .post-date .short-date{display:none}
 .post-date-view-wrapper .post-view{margin:0 3px 0 0;float:none}
 .post-date-view-wrapper .post-view .view-icon{margin-bottom:-3px}
 .post-date-view-wrapper .post-date p{font-size:16px}
 .post-title{margin-top:40px;font-size:35px;color:grey}
-.post-tags{display:inline-block;max-width:320px;margin-top:10px}
+.post-tags{margin-top:10px}
 .post-tags .icon{margin:0 8px -4px}
 .post-tags .icon.tag-icon{opacity:.25}
 .post-body{padding:0 30px}
@@ -105,7 +108,7 @@ section{padding:5px}
 .post-title{font-size:22px}
 .post-date-view-wrapper .post-date p,.post-date-view-wrapper .post-view{font-size:14px}
 .post-header .post-author{margin-top:2px}
-.post-date-view-wrapper{padding-top:8px}
+.post-date-view-wrapper{padding-top:17px}
 .post-date-view-wrapper .post-date .short-date{display:block}
 .post-date-view-wrapper .post-date .full-date{display:none}
 }
