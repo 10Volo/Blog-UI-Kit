@@ -437,6 +437,12 @@ aside {
 	margin-top: 10px;
 	/*display: none;*/
 }
+.post-tags .icon {
+	margin-right: 10px;
+}
+.post-tags .icon.tag-icon {
+	opacity: .25;
+}
 .post-body {
 	padding: 0px 30px;
 }

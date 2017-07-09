@@ -67,7 +67,10 @@
 }
 .calendar-icon {
 	background-image: url('../img/calendar.png');
-} 
+}
+.tag-icon {
+	background-image: url('../img/tag (1).png');
+}
 
 /*****
 
