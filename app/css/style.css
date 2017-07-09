@@ -438,7 +438,7 @@ aside {
 	/*display: none;*/
 }
 .post-tags .icon {
-	margin-right: 10px;
+	margin: 0px 8px -3px 8px;
 }
 .post-tags .icon.tag-icon {
 	opacity: .25;
