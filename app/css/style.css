@@ -426,7 +426,8 @@ aside {
 }
 .post-date-view-wrapper .post-date {
 	display: inline-block;
-	border-left:  3px solid #41e4de;
+	/*border-left:  3px solid #41e4de;*/
+	border-left:  2px solid #eee;
 	padding-left: 8px;
 }
 .post-date-view-wrapper .post-date .short-date {
