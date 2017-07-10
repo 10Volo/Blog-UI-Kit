@@ -20,7 +20,7 @@
 .like-icon{background-image:url(../img/like.png)}
 .view-icon{background-image:url(../img/eye.png);width:20px;margin-right:3px}
 .comment-icon{background-image:url(../img/chat-black.png);margin-right:3px}
-.options-icon{background-image:url(../img/more-black.png);height:18px;margin-top:16px}
+.options-icon{background-image:url(../img/more-black.png);height:18px;margin-top:18px}
 .calendar-icon{background-image:url(../img/calendar.png)}
 .tag-icon{background-image:url('../img/tag (1).png')}
 .button{cursor:pointer;font-size:16px;border:none;color:#fff;background-color:#cac9cd;height:34px;line-height:34px;padding:0 16px;text-align:center;text-decoration:none;outline:0;transition:.2s;font-weight:700}

@@ -1,8 +1,8 @@
 .page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg)}
-.card-options,.circle,.post-author,.post-author a,.post-author-name,.post-date p{display:inline-block}
-.card-dropdown a,.card-title h2 a{text-decoration:none}
+.card-options,.circle,.post-author,.post-author a,.post-author-name,.post-category,.post-date,.post-date p{display:inline-block}
 .card-options,.tag{text-align:center;user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
 .card-cover,.content-header,.page-top,.post-author-avatar,.post-cover{background-position:center;background-size:cover}
+.card-dropdown a,.card-title h2 a,.logo a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
 *{box-sizing:border-box;padding:0;margin:0}
 .card-wrap,section{padding:20px}
 body{font-family:Roboto,sans-serif}
@@ -14,12 +14,14 @@ aside{width:100%;height:500px}
 .post-author a:hover .post-author-name{color:#737373}
 .post-author-name{height:30px;line-height:30px;margin-left:40px;transition:all .2s}
 .post-author-avatar{height:30px;width:30px;border-radius:50%;position:absolute}
-.post-date{color:#c1c1c1;font-size:14px}
-.circle{background-color:#ffdc5a;height:10px;width:10px;border-radius:50%;margin-right:7px}
+.post-category a{font-size:16px;font-weight:700;color:#c1c1c1;transition:all .2s}
+.post-category a:hover{color:#9a9a9a}
+.post-date{color:#c1c1c1;font-size:14px;float:right;margin-top:3px}
+.circle{background-color:#ffdc5a;height:10px;width:10px;border-radius:50%;margin-right:2px}
 .page-top{height:200px;margin-bottom:50px}
 .card{height:auto;width:100%;border-radius:4px;position:relative}
-.card-top{height:auto;padding:10px 15px}
-.card-options{position:absolute;right:0;top:0;cursor:pointer;width:50px;height:50px;line-height:50px}
+.card-top{height:auto;padding:12px 20px}
+.card-options{position:absolute;right:0;top:0;cursor:pointer;width:50px;height:54px;line-height:50px}
 .card-options span.options-icon{opacity:.25;transition:.2s}
 .card-options:hover span.options-icon{opacity:.6}
 .card-dropdown{min-width:120px;height:auto;border-radius:4px;box-shadow:-2px -1px 20px 0 rgba(0,0,0,.2),2px 10px 20px 0 rgba(0,0,0,.2);background-color:#fff;position:absolute;top:40px;right:-10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
@@ -28,21 +30,20 @@ aside{width:100%;height:500px}
 .card-title h2,.tag{display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
 .card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
-.card-info{height:auto;padding:15px 15px 10px;position:relative}
+.card-info{height:auto;padding:20px 20px 10px;position:relative}
 .navigation-left,.navigation-top{position:fixed;background-color:#fff}
-.card-controll{height:40px;text-align:center}
+.card-controll{height:42px;text-align:center}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
-.card-title h2 a,.tag{color:grey;font-weight:700}
 .card-title{padding:10px 0}
 .card-title h2{font-size:1.6em}
-.card-title h2 a:hover{text-decoration:underline}
-.logo a,.tag a,.tag a:hover{text-decoration:none}
+.card-title h2 a{color:grey;font-weight:700;transition:all .2s}
+.card-title h2 a:hover{color:#41e4de}
 .card-tags{width:100%}
-.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
+.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;color:grey;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
 .desktop-nav .desktop-nav-link,.logo{display:inline-block;line-height:80px}
 .tag a{color:inherit}
 .post-comment,.post-like,.post-view{display:inline-block;height:40px;min-width:40px;width:auto;transition:all .2s;color:#c1c1c1;font-weight:700}
-.post-comment button.post-comment-wrap,.post-like button.post-like-wrap{margin:10px 15px}
+.post-comment button.post-comment-wrap,.post-like button.post-like-wrap{margin:10px 20px}
 .post-comment{cursor:pointer;float:right}
 .post-comment span.comment-icon{opacity:.25;transition:.2s}
 .post-comment:hover span.comment-icon{opacity:.6}
@@ -51,7 +52,7 @@ aside{width:100%;height:500px}
 .post-like.liked span.like-icon,.post-like:hover span.like-icon{transition:all .15s ease-in-out}
 .post-like.presed span.like-icon{transition:all .15s ease-in-out;transform:scale(1.5);opacity:0}
 .post-like.liked span.like-icon{background-image:url(../img/like-active.png)}
-.post-view{float:right;margin:10px 15px 10px 0;height:17px}
+.post-view{float:right;margin:10px 20px 10px 0;height:17px}
 .navigation-left,.navigation-top{z-index:9999}
 .navigation-top{height:80px;width:100%}
 .navigation-links{height:80px;width:80%;margin:0 auto;padding:0 20px}
@@ -64,24 +65,22 @@ aside{width:100%;height:500px}
 .desktop-nav .desktop-nav-link.active{border-bottom:5px solid #40e0d0;color:#737373}
 .mobile-nav{display:none}
 .navigation-left{height:100vh;width:250px;display:none}
-.main-content{padding-top:80px;background-color:#f1f1f1}
-.content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%}
+.main-content{padding-top:80px;background-color:#f1f1f1;height:2000px}
+.content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%;display:none}
 .content-controll{height:100px;width:100%}
 .content{width:80%;margin:0 auto;z-index:0;height:100vh}
 .post-wrapper{background-color:#fff}
 .post-cover{width:100%;height:350px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .post{height:auto;width:70%;border:1px solid #eee}
-.post-header{padding:40px 30px}
-.post-header .post-author{height:50px}
-.post-header .post-author-name{height:50px;line-height:50px;margin-left:60px}
-.post-header .post-author-avatar{height:50px;width:50px}
-.post-date-view-wrapper{float:right;padding-top:15px}
-.post-date-view-wrapper .post-date{display:inline-block;border-left:2px solid #eee;padding-left:8px}
-.post-date-view-wrapper .post-date .short-date{display:none}
-.post-date-view-wrapper .post-view{margin:0 3px 0 0;float:none}
-.post-date-view-wrapper .post-view .view-icon{margin-bottom:-3px}
-.post-date-view-wrapper .post-date p{font-size:16px}
-.post-title{margin-top:40px;font-size:35px;color:grey}
+.post-header{padding:40px 30px 50px}
+.post-header .post-author{height:40px}
+.post-header .post-author a p{margin-left:50px}
+.post-header .post-author a p.name{margin-top:2px;transition:all .2s}
+.post-header .post-author a p.date{font-size:14px;font-weight:400;color:#c1c1c1;height:18px}
+.post-header .post-author-avatar{height:40px;width:40px}
+.post-header .post-author:hover .name{color:#737373}
+.post-header .post-category{float:right;margin-top:2px}
+.post-title{margin-top:30px;font-size:35px;color:grey}
 .post-tags{margin-top:10px}
 .post-tags .icon{margin:0 8px -4px}
 .post-tags .icon.tag-icon{opacity:.25}
@@ -98,17 +97,11 @@ section{padding:5px}
 .main-content{padding-top:60px}
 .card-wrap{padding:0}
 .post-cover{height:400px}
-.post-title{margin-top:30px}
 .post-header{padding:30px 15px 40px}
 .post-body{padding:0 15px}
-.post-body .divider{margin-bottom:30px}
+.post-body .divider{margin-bottom:40px}
 }
 @media screen and (max-width:530px){.desktop-nav{display:none}
 .post-cover{height:200px}
 .post-title{font-size:22px}
-.post-date-view-wrapper .post-date p,.post-date-view-wrapper .post-view{font-size:14px}
-.post-header .post-author{margin-top:2px}
-.post-date-view-wrapper{padding-top:17px}
-.post-date-view-wrapper .post-date .short-date{display:block}
-.post-date-view-wrapper .post-date .full-date{display:none}
 }

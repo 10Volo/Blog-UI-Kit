@@ -63,13 +63,14 @@
 .options-icon {
 	background-image: url('../img/more-black.png');
 	height: 18px;
-	margin-top: 16px;
+	margin-top: 18px;
 }
 .calendar-icon {
 	background-image: url('../img/calendar.png');
 }
 .tag-icon {
 	background-image: url('../img/tag (1).png');
+	/*display: none;*/
 }
 
 /*****

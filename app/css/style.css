@@ -67,9 +67,25 @@ aside {
 
 /*Date*/
 
+.post-category {
+	display: inline-block;
+}
+.post-category a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #c1c1c1;
+	transition: all .2s; 
+}
+.post-category a:hover {
+	color: #9a9a9a;
+}
 .post-date {
+	display: inline-block;
 	color: #c1c1c1;
 	font-size: 14px;
+	float: right;
+	margin-top: 3px;
 }
 .post-date p {
 	display: inline-block;
@@ -82,7 +98,7 @@ aside {
 	width: 10px;
 	display: inline-block;
 	border-radius: 50%;
-	margin-right: 7px;
+	margin-right: 2px;
 }
 
 /**************************************************/
@@ -113,7 +129,7 @@ aside {
 }
 .card-top {
 	height: auto;
-	padding: 10px 15px;
+	padding: 12px 20px;
 	/*display: none;*/
 }
 .card-options {
@@ -122,7 +138,7 @@ aside {
 	top: 0px;
 	cursor: pointer;
 	width: 50px;
-	height: 50px;
+	height: 54px;
 	display: inline-block;
 	text-align: center;
 	line-height: 50px;
@@ -177,13 +193,13 @@ aside {
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 15px;
+	padding: 20px;
 	padding-bottom: 10px;
 	position: relative;
 }
 .card-controll {
 	/*border-top: 1px solid #d6d6d6;*/
-	height: 40px;
+	height: 42px;
 	text-align: center;
 }
 .card-controll div button {
@@ -208,9 +224,11 @@ aside {
 	color: grey;
 	font-weight: bold;
 	text-decoration: none;
+	transition: all .2s;
 }
 .card-title h2 a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: #41e4de;
 }
 .card-tags {
 	width: 100%;
@@ -255,7 +273,7 @@ aside {
 	font-weight: bold;
 }
 .post-like button.post-like-wrap, .post-comment button.post-comment-wrap {
-	margin: 10px 15px;
+	margin: 10px 20px;
 }
 .post-comment {
 	cursor: pointer;
@@ -292,7 +310,7 @@ aside {
 }
 .post-view {
 	float: right;
-	margin: 10px 15px;
+	margin: 10px 20px;
 	margin-left: 0px;
 	height: 17px;
 }
@@ -374,6 +392,7 @@ aside {
 .main-content {
 	padding-top: 80px;
 	background-color: #f1f1f1;
+	height: 2000px;
 }
 .content-header {
 	background-position: center;
@@ -381,6 +400,7 @@ aside {
 	background-image: url(../img/gradient-sea.jpg);
 	height: 400px;
 	width: 100%;
+	display: none;
 } 
 .content-controll {
 	height: 100px;
@@ -412,53 +432,43 @@ aside {
 	height: auto;
 	width: 70%;
 	border: 1px solid #eee;
-	/*border-radius: 4px;*/
-	/*margin-top: -250px;*/
 }
 .post-header {
-	padding: 40px 30px;
+	padding: 40px 30px 50px 30px;
 }
 .post-header .post-author {
-	height: 50px;
+	height: 40px;
 }
-.post-header .post-author-name {
-	height: 50px;
-	line-height: 50px;
-	margin-left: 60px;
+.post-header .post-author a {
+	text-decoration: none;
+}
+.post-header .post-author a p {
+	margin-left: 50px;
+}
+.post-header .post-author a p.name {
+	margin-top: 2px;
+	transition: all .2s;
+}
+.post-header .post-author a p.date {
+	font-size: 14px;
+	font-weight: normal;
+	color: #c1c1c1;
+	height: 18px;
 }
 .post-header .post-author-avatar {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 }
-.post-date-view-wrapper {
-	float: right;
-	/*padding: 10px 15px;*/
-	padding-top: 15px; 
+.post-header .post-author:hover .name {
+	color: #737373;
+}
 
-}
-.post-date-view-wrapper .post-date {
-	display: inline-block;
-	/*border-left:  3px solid #41e4de;*/
-	border-left:  2px solid #eee;
-	padding-left: 8px;
-}
-.post-date-view-wrapper .post-date .short-date {
-	display: none;
-}
-.post-date-view-wrapper .post-view {
-	margin: 0px;
-	margin-right: 3px;
-	float: none;
-}
-.post-date-view-wrapper .post-view .view-icon {
-	margin-bottom: -3px;
-}
-.post-date-view-wrapper .post-date p {
-	font-size: 16px;
+.post-header .post-category {
+	float: right;
+	margin-top: 2px;
 }
 .post-title {
-	margin-top: 40px;
-	/*padding: 30px;*/
+	margin-top: 30px;
 	font-size: 35px;
 	color: grey;
 }
@@ -531,7 +541,7 @@ aside {
 		height: 400px;
 	}
 	.post-title {
-		margin-top: 30px;
+		/*margin-top: 25px;*/
 	}
 	.post-header {
 		padding: 30px 15px 40px 15px;
@@ -540,7 +550,7 @@ aside {
 		padding: 0px 15px;
 	}
 	.post-body .divider {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 }
 @media screen and (max-width: 530px) { 
@@ -553,24 +563,5 @@ aside {
 	}
 	.post-title {
 		font-size: 22px;
-	}
-	.post-header .post-author {
-		margin-top: 2px;
-	}
-	.post-date-view-wrapper {
-		padding-top: 17px; 
-
-	}
-	.post-date-view-wrapper .post-date p {
-		font-size: 14px;
-	}
-	.post-date-view-wrapper .post-date .short-date {
-		display: block;
-	}
-	.post-date-view-wrapper .post-date .full-date {
-		display: none;
-	}
-	.post-date-view-wrapper .post-view {
-		font-size: 14px;
 	}
 }
