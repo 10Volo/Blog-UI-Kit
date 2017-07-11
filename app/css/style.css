@@ -19,10 +19,11 @@ aside {
 }
 .divider {
 	/*width: 100%;*/
-	width: 100px;
-	height: 3px;
-	background-color: #41e4de;
-	/*background-color: #eee;*/
+	/*width: 100px;*/
+	height: 1px;
+	/*background-color: #41e4de;*/
+	background-color: #eee;
+	/*display: none;*/
 }
 
 /****************************************************/
@@ -411,7 +412,7 @@ aside {
 	width: 80%;
 	margin: 0 auto;
 	z-index: 0;
-	height: 100vh;
+	height: auto;
 	/*border: 1px solid grey;*/
 }
 
@@ -434,7 +435,7 @@ aside {
 	border: 1px solid #eee;
 }
 .post-header {
-	padding: 40px 30px 50px 30px;
+	padding: 40px 30px 40px 30px;
 }
 .post-header .post-author {
 	height: 40px;
@@ -483,10 +484,24 @@ aside {
 	opacity: .25;
 }
 .post-body {
-	padding: 0px 30px;
+	padding: 0px 30px 30px 30px;
 }
 .post-body .divider {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+}
+.post-body h2,
+.post-body h3 {
+	color: #c1c1c1;
+	/*color: #41e4de;*/
+	margin: 20px 0px;
+	border-left: 4px solid #41e4de;
+	padding-left: 15px;
+}
+.post-body h2 {
+	font-size: 28px;
+}
+.post-body h3 {
+	font-size: 24px;
 }
 .post-body p {
 	color: #737373;
@@ -544,13 +559,13 @@ aside {
 		/*margin-top: 25px;*/
 	}
 	.post-header {
-		padding: 30px 15px 40px 15px;
+		padding: 25px 15px 30px 15px;
 	}
 	.post-body {
-		padding: 0px 15px;
+		padding: 0px 15px 30px 15px;
 	}
 	.post-body .divider {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 530px) { 
@@ -562,6 +577,10 @@ aside {
 		height: 200px;
 	}
 	.post-title {
-		font-size: 22px;
+		font-size: 18px;
+	}
+	.post-body h2,
+	.post-body h3 {
+		margin: 15px 0px;
 	}
 }
