@@ -1,5 +1,4 @@
 .row:after{content:"";clear:both;display:table}
-.button,.icon{display:inline-block}
 [class*=col-]{padding:10px;float:left}
 .col-1{width:8.33%}
 .col-2{width:16.66%}
@@ -16,13 +15,15 @@
 .dimmed{background-color:rgba(0,0,0,.7);height:100vh;position:fixed;z-index:5}
 .box{box-shadow:0 3px 25px 0 rgba(46,61,73,.2);background-color:#fff}
 .no-select{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
-.icon{width:16px;height:16px;background-size:cover;background-position:center;margin-bottom:-2px}
+.icon{display:inline-block;width:16px;height:16px;background-size:cover;background-position:center;margin-bottom:-2px}
 .like-icon{background-image:url(../img/like.png)}
 .view-icon{background-image:url(../img/eye.png);width:20px;margin-right:3px}
 .comment-icon{background-image:url(../img/chat-black.png);margin-right:3px}
 .options-icon{background-image:url(../img/more-black.png);height:18px;margin-top:18px}
 .calendar-icon{background-image:url(../img/calendar.png)}
-.tag-icon{background-image:url('../img/tag (1).png')}
-.button{cursor:pointer;font-size:16px;border:none;color:#fff;background-color:#cac9cd;height:34px;line-height:34px;padding:0 16px;text-align:center;text-decoration:none;outline:0;transition:.2s;font-weight:700}
+.tag-icon{background-image:url('../img/tag (1).png');display:none}
+.button{display:inline-block;cursor:pointer;font-size:16px;border:none;color:#fff;background-color:#cac9cd;height:34px;line-height:34px;padding:0 16px;text-align:center;text-decoration:none;outline:0;transition:.2s;border-radius:4px;font-weight:700}
 .button:hover{background-color:#b5b4b8}
 .button.big{font-size:26px;height:44px;padding:0 20px}
+.main-button{border:2px solid #41e4de;background-color:transparent;color:#41e4de;line-height:30px}
+.main-button:hover{color:#fff;background-color:#41e4de}

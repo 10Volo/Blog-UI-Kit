@@ -1,14 +1,14 @@
 .page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg)}
 .card-options,.circle,.post-author,.post-author a,.post-author-name,.post-category,.post-date,.post-date p{display:inline-block}
-.card-options,.tag{text-align:center;user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
-.card-cover,.content-header,.page-top,.post-author-avatar,.post-cover{background-position:center;background-size:cover}
-.card-dropdown a,.card-title h2 a,.logo a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
+.card-options,.tag{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);text-align:center}
+.card-dropdown a,.card-title h2 a,.logo a,.post-body a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
+.card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover{background-position:center;background-size:cover}
 *{box-sizing:border-box;padding:0;margin:0}
 .card-wrap,section{padding:20px}
 body{font-family:Roboto,sans-serif}
 section{margin:0 auto;max-width:1200px;width:80%}
 aside{width:100%;height:500px}
-.divider{height:2px;background-color:#eee}
+.divider{width:150px;height:3px;background-color:#41e4de}
 .post-author{width:auto}
 .post-author a{font-weight:700;color:#9a9a9a}
 .post-author a:hover .post-author-name{color:#737373}
@@ -56,16 +56,16 @@ aside{width:100%;height:500px}
 .navigation-left,.navigation-top{z-index:9999}
 .navigation-top{height:80px;width:100%}
 .navigation-links{height:80px;width:80%;margin:0 auto;padding:0 20px}
-.logo{height:80px;width:auto;margin-left:10px;font-size:22px}
+.logo{height:80px;width:auto;margin-left:10px;font-size:18px}
 .logo a{color:#40e0d0}
-.desktop-nav{display:inline-block;height:80px;width:calc(100% - 185px);float:right;padding:0 20px}
+.desktop-nav{display:inline-block;height:80px;width:calc(100% - 153px);float:right;padding:0 20px}
 .desktop-nav ul li{display:inline-block}
 .desktop-nav .desktop-nav-link{font-size:20px;text-decoration:none;color:#9a9a9a;background-color:#fff;height:80px;padding:0 15px;transition:.2s ease-in-out}
 .desktop-nav .desktop-nav-link:hover{color:#737373}
 .desktop-nav .desktop-nav-link.active{border-bottom:5px solid #40e0d0;color:#737373}
 .mobile-nav{display:none}
 .navigation-left{height:100vh;width:250px;display:none}
-.main-content{padding-top:80px;background-color:#f1f1f1;height:2000px}
+.main-content{padding-top:80px;background-color:#f1f1f1;height:3000px;max-width:1440px}
 .content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%;display:none}
 .content-controll{height:100px;width:100%}
 .content{width:80%;margin:0 auto;z-index:0;height:auto}
@@ -85,18 +85,38 @@ aside{width:100%;height:500px}
 .post-tags .icon{margin:0 8px -4px}
 .post-tags .icon.tag-icon{opacity:.25}
 .post-body{padding:0 30px 30px}
-.post-body .divider{margin-bottom:40px}
-.post-body h2,.post-body h3{color:#c1c1c1;margin:20px 0;border-left:4px solid #41e4de;padding-left:15px}
+.post-body .divider{margin-bottom:30px}
+.post-body h2,.post-body h3{color:#adadad;margin:20px 0}
 .post-body h2{font-size:28px}
 .post-body h3{font-size:24px}
 .post-body p{color:#737373;font-size:18px;line-height:28px}
 .post-body img{width:100%;margin:20px 0}
+.post-body a{color:#41e4de}
+.post-body a:hover{text-decoration:underline}
+.post-body ul{margin:20px 0 20px 40px}
+.post-body ul li{font-size:18px;margin:5px 0;color:#41e4de}
+.post-body ul li span{color:#737373}
 .post-controll{height:50px}
 .post-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
-.post-controll .post-like{margin-left:30px;margin-top:5px}
-.post-controll .post-view{float:none;margin-left:10px;margin-right:40px;margin-top:15px}
-.post-controll .divider{margin:0 30px 10px}
-.post-bottom{height:200px}
+.post-controll .post-like{float:right;margin-right:30px;margin-top:5px}
+.post-controll .post-view{margin-right:10px;margin-top:15px}
+.post-controll .divider{display:inline-block;margin-left:30px;margin-top:22px}
+.post-bottom{height:auto;padding:30px}
+.post-author-info .avatar{width:100px;height:100px;border-radius:50%;margin:0 auto;background-image:url(../img/gradient-sea.jpg)}
+.post-author-info .author-info{width:80%;text-align:center;font-style:italic;color:#c1c1c1;margin:15px auto}
+.post-author-info .info{text-align:center;margin-top:20px}
+.post-author-info .info .name{display:inline-block}
+.post-author-info .info .name a{display:inline-block;font-weight:700;color:#9a9a9a;transition:all .2s;text-decoration:none}
+.post-author-info .info .name a:hover{color:#737373}
+.post-author-info .info .rating{display:inline-block;background-color:#eee;color:grey;font-weight:700;border-radius:4px;padding:3px 5px;margin-left:5px}
+.post-author-info .follow-button{text-align:center;margin-top:20px}
+.post-comments{padding:30px}
+.post-comments h2{font-size:28px;color:#adadad}
+.post-comments .comment-form form{padding:20px 0}
+.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:150px;height:auto}
+.post-comments .comment-form form textarea:focus{border:2px solid #adadad}
+.post-comments .comment-form form .button{margin-top:20px}
+.comments{height:500px}
 @media screen and (max-width:1200px){.content,section{width:100%}
 }
 @media screen and (max-width:780px){.col-3,.col-4,.col-9,.post{width:100%}
@@ -110,10 +130,11 @@ section{padding:5px}
 .post-cover{height:400px}
 .post-header{padding:25px 15px 30px}
 .post-body{padding:0 15px 25px}
-.post-body .divider{margin-bottom:35px}
-.post-controll .post-like{margin-left:5px}
-.post-controll .post-view{margin-right:25px}
-.post-controll .divider{margin:0 15px 10px}
+.post-body .divider{margin-bottom:25px;width:100px}
+.post-controll .post-like{margin-right:10px}
+.post-controll .post-view{margin-right:0}
+.post-controll .divider{margin-left:15px;width:100px}
+.post-comments{padding:20px 15px}
 }
 @media screen and (max-width:530px){.desktop-nav{display:none}
 .post-cover{height:200px}
