@@ -20,7 +20,7 @@ aside {
 .divider {
 	/*width: 100%;*/
 	/*width: 100px;*/
-	height: 1px;
+	height: 2px;
 	/*background-color: #41e4de;*/
 	background-color: #eee;
 	/*display: none;*/
@@ -432,7 +432,8 @@ aside {
 .post {
 	height: auto;
 	width: 70%;
-	border: 1px solid #eee;
+	/*border-left: 1px solid #eee;*/
+	/*border-right: 1px solid #eee;*/
 }
 .post-header {
 	padding: 40px 30px 40px 30px;
@@ -508,7 +509,41 @@ aside {
 	font-size: 18px;
 	line-height: 28px;
 }
+.post-body img {
+	width: 100%;
+	margin: 20px 0px;
+}
 
+
+.post-controll {
+	height: 50px;
+}
+.post-controll div button {
+	cursor: pointer;
+	color: #c1c1c1;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-radius: 0px;
+}
+.post-controll .post-like {
+	margin-left: 30px;
+	margin-top: 5px;
+}
+.post-controll .post-view {
+	float: none;
+	margin-left: 10px;
+	margin-right: 40px;
+	margin-top: 15px;
+}
+.post-controll .divider {
+	margin: 0px 30px 10px 30px;
+}
+.post-bottom {
+	height: 200px;
+}
 
 /*******************************************/
 
@@ -551,6 +586,7 @@ aside {
 	}
 	.post {
 		width: 100%;
+		border: none;
 	}
 	.post-cover {
 		height: 400px;
@@ -562,10 +598,19 @@ aside {
 		padding: 25px 15px 30px 15px;
 	}
 	.post-body {
-		padding: 0px 15px 30px 15px;
+		padding: 0px 15px 25px 15px;
 	}
 	.post-body .divider {
-		margin-bottom: 30px;
+		margin-bottom: 35px;
+	}
+	.post-controll .post-like {
+		margin-left: 5px;
+	}
+	.post-controll .post-view {
+		margin-right: 25px;
+	}
+	.post-controll .divider {
+		margin: 0px 15px 10px 15px;
 	}
 }
 @media screen and (max-width: 530px) { 
