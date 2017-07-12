@@ -42,3 +42,26 @@ window.addEventListener('click', function(ev){
 		});
 	}
 });
+
+var dropdownList = document.querySelector('#dropdown') || null;
+var dropdownListOptions = document.querySelector('#dropdown .options') || null;
+var dropdownListArrow = document.querySelector('#dropdown .dropdown-arrow') || null;
+var dropdownListSelected = document.querySelector('#dropdown .dropdown-selected') || null;
+
+if (dropdownList && dropdownListOptions){
+
+	var initOption = dropdownListOptions.children[0].textContent.trim();
+	dropdownListSelected.textContent = initOption;
+
+	dropdownList.addEventListener('click', function(e){
+		dropdownListArrow.classList.toggle('rotated');
+		dropdownListOptions.classList.toggle('show');
+	});
+
+}
+if (dropdownListOptions && dropdownListSelected){
+	dropdownListOptions.addEventListener('click', function(e){
+		var option = e.target.textContent.trim();
+		dropdownListSelected.textContent = option;
+	});
+}
