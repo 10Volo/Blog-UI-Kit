@@ -2,7 +2,7 @@
 .card-options,.circle,.post-author,.post-author a,.post-author-name,.post-category,.post-date,.post-date p{display:inline-block}
 .card-options,.tag{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);text-align:center}
 .card-dropdown a,.card-title h2 a,.logo a,.post-body a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
-.card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover{background-size:cover;background-position:center}
+.card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-size:cover;background-position:center}
 *{box-sizing:border-box;padding:0;margin:0}
 .card-wrap,section{padding:20px}
 body{font-family:Roboto,sans-serif}
@@ -31,7 +31,7 @@ aside{width:100%;height:500px}
 .card-dropdown a{display:block;padding:12px 15px;color:grey}
 .card-title h2,.tag{display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
-.card-cover{height:170px;background-image:url(../img/front-end-image.jpg)}
+.card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .card-info{height:auto;padding:20px 20px 10px;position:relative}
 .navigation-left,.navigation-top{position:fixed;background-color:#fff}
 .card-controll{height:42px}
@@ -73,7 +73,7 @@ aside{width:100%;height:500px}
 .content-controll{height:100px;width:100%}
 .content{width:80%;margin:0 auto;z-index:0;height:auto}
 .post-wrapper{background-color:#fff}
-.post-cover{width:100%;height:350px;background-image:url(../img/front-end-image.jpg)}
+.post-cover{width:100%;height:350px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .post{height:auto}
 .post-header{padding:40px 30px}
 .post-header .post-author{height:40px}
@@ -113,21 +113,26 @@ aside{width:100%;height:500px}
 .post-author-info .info .name a:hover{color:#737373}
 .post-author-info .info .rating{display:inline-block;background-color:#eee;color:grey;font-weight:700;border-radius:4px;padding:3px 5px;margin-left:5px}
 .post-author-info .follow-button{text-align:center;margin-top:20px}
-.post-sidebar{color:#adadad;padding:35px 20px 20px;height:auto}
+.post-sidebar{color:grey;padding:35px 20px 20px;height:auto}
 .post-sidebar h2{margin-bottom:20px}
-.post-sidebar-content{border:1px solid #eee;min-height:300px}
+.related-post{height:60px;margin-bottom:15px;overflow:hidden}
+.related-post-cover{width:60px;height:60px;display:inline-block;background-image:url(../img/vue-cover.jpeg);border-radius:4px}
+.related-post-title{height:60px;width:calc(100% - 60px);float:right;padding-left:10px;transition:all .2s;display:table}
+.related-post-title h3{display:table-cell;height:60px;vertical-align:middle}
+.related-post a .related-post-title{color:#adadad;text-decoration:none}
+.related-post:hover .related-post-title{color:#41e1de}
 .post-comments{padding:10px 30px}
 .post-comments h2{font-size:28px;color:grey}
 .post-comments .comment-form form{padding:20px 0}
 .post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:150px;height:auto}
-.post-comments .comment-form form textarea:focus{border:2px solid #adadad}
+.post-comments .comment-form form textarea:focus{border:2px solid #41e1de}
 .post-comments .comment-form form .button{margin-top:20px}
 .comments-controll{height:auto}
-.comment-controll-dropdown{display:inline-block;position:relative;color:grey;font-weight:700;cursor:pointer;min-width:100px;width:auto;height:40px}
-.comment-controll-dropdown .dropdown-selected{display:inline-block;min-width:60px;width:auto;height:40px;line-height:40px;padding-left:10px}
+.comment-controll-dropdown{display:inline-block;position:relative;color:#adadad;font-weight:700;cursor:pointer;width:auto;height:40px}
+.comment-controll-dropdown .dropdown-selected{display:inline-block;width:auto;height:40px;line-height:40px;padding-left:10px}
 .comment-controll-dropdown .dropdown-arrow{display:inline-block;width:40px;height:40px;float:right;border-radius:50%;background-position:center;background-size:20px;background-image:url(../img/right-arrow.png);background-repeat:no-repeat;transition:all .2s ease-in-out;transform:rotate(0)}
 .comment-controll-dropdown .dropdown-arrow.rotated{transform:rotate(90deg);transition:all .2s ease-in-out}
-.comment-controll-dropdown .options{top:40px;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden}
+.comment-controll-dropdown .options{top:40px;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden;border-radius:4px}
 .comment-controll-dropdown .options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
 .comment-controll-dropdown .options .option{display:block;min-width:110px;width:auto;height:40px;line-height:40px;padding:0 10px}
 .comment-controll-dropdown .options .option:hover{background-color:#f1f1f1}

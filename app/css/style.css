@@ -192,8 +192,7 @@ aside {
 	/*background-color: #eee;*/
 	background-position: center;
 	background-size: cover;
-	/*background-image: url(../img/wallpaper-1bae1.jpg);*/
-	background-image: url('../img/front-end-image.jpg');
+	background-image: url(../img/wallpaper-1bae1.jpg);
 	/*display: none;*/
 	/*margin: 0px 15px;*/
 }
@@ -433,7 +432,7 @@ aside {
 	width: 100%;
 	height: 350px;
 	/*background-image: url(../img/wallpaper-1bae1.jpg);*/
-	background-image: url('../img/front-end-image.jpg');
+	background-image: url('../img/wallpaper-1bae1.jpg');
 	background-position: center;
 	background-size: cover;
 	/*display: none;*/
@@ -631,16 +630,56 @@ aside {
 
 .post-sidebar {
 	/*border: 1px solid black;*/
-	color: #adadad;
+	color: grey;
 	padding: 35px 20px 20px 20px;
 	height: auto;
+	/*border: 1px solid #eee;*/
 }
 .post-sidebar h2 {
 	margin-bottom: 20px;
 }
 .post-sidebar-content {
-	border: 1px solid #eee;
-	min-height: 300px;
+	/*min-height: 300px;*/
+}
+.related-post {
+	height: 60px;
+	/*border: 1px solid #eee;*/
+	/*border-radius: 4px;*/
+	margin-bottom: 15px;
+	overflow: hidden;
+
+}
+.related-post-cover {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../img/vue-cover.jpeg');
+	border-radius: 4px;
+/*	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;*/
+}
+.related-post-title {
+	height: 60px;
+	width: calc(100% - 60px);
+	display: inline-block;
+	float: right;
+	padding-left: 10px;
+	transition: all .2s;
+	display: table;
+}
+.related-post-title h3 {
+	display: table-cell;
+	height: 60px;
+	vertical-align: middle;
+}
+.related-post a .related-post-title {
+	color: #adadad;
+	text-decoration: none;
+}
+.related-post:hover .related-post-title {
+	color: #41e1de;
 }
 
 
@@ -672,7 +711,7 @@ aside {
 	height: auto;
 }
 .post-comments .comment-form form textarea:focus {
-	border: 2px solid #adadad;
+	border: 2px solid #41e1de;
 }
 .post-comments .comment-form form .button {
 	margin-top: 20px;
@@ -685,16 +724,16 @@ aside {
 	display: inline-block;
 	position: relative;
 	/*background-color: #eee;*/
-	color: grey;
+	color: #adadad;
 	font-weight: bold;
 	cursor: pointer;
-	min-width: 100px;
+	/*min-width: 100px;*/
 	width: auto;
 	height: 40px;
 }
 .comment-controll-dropdown .dropdown-selected {
 	display: inline-block;
-	min-width: 60px;
+	/*min-width: 60px;*/
 	width: auto;
 	height: 40px;
 	line-height: 40px;
@@ -723,6 +762,7 @@ aside {
 	transition: all .2s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
+	border-radius: 4px;
 }
 .comment-controll-dropdown .options.show {
 	transition: all .2s ease-in-out;
@@ -743,6 +783,9 @@ aside {
 
 .comments {
 	height: 500px;
+}
+.comment {
+
 }
 
 
