@@ -142,7 +142,7 @@ aside{width:100%;height:500px}
 .comment-controll-dropdown .dropdown-options .dropdown-option:hover{background-color:#f1f1f1}
 .comments{height:500px;padding-top:15px}
 .comment{min-height:100px;height:auto;border-radius:4px;margin-bottom:20px}
-.comment-header{position:relative}
+.comment-header{height:40px;position:relative}
 .comment-author{width:auto;display:inline-block}
 .comment-author a{display:inline-block;font-weight:700;color:#9a9a9a;text-decoration:none}
 .comment-author-avatar{height:40px;width:40px;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;position:absolute}
@@ -157,7 +157,7 @@ aside{width:100%;height:500px}
 .comment-dropdown.show{visibility:visible;opacity:1;z-index:9999}
 .comment-dropdown a{display:block;text-decoration:none;padding:12px 15px;color:grey}
 .comment-dropdown a:hover{background-color:#f1f1f1}
-.comment-body{min-height:60px;padding:10px 0 5px}
+.comment-body{min-height:40px;height:auto;padding-top:10px}
 .comment-body p{color:#737373;font-size:18px;line-height:28px}
 .comment-controll{height:50px;padding-bottom:10px;border-bottom:2px solid #eee}
 .comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:auto;padding-top:5px;cursor:pointer}
