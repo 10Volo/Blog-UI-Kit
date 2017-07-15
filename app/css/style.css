@@ -19,7 +19,6 @@ aside {
 }
 .anchor {
 	color: #41e4de;
-	font-size: 1em;
 	margin-right: 5px;
 }
 .divider {
@@ -165,7 +164,7 @@ aside {
 	background-color: white;
 	position: absolute;
 	top: 40px;
-	right: -10px;
+	right: 10px;
 	overflow: hidden;
 	visibility: hidden;
 	opacity: 0;
@@ -735,21 +734,21 @@ aside {
 	cursor: pointer;
 	/*min-width: 100px;*/
 	width: auto;
-	height: 32px;
+	height: 34px;
 	/*border-left: 3px solid #41e1de;*/
 }
 .comment-controll-dropdown .dropdown-selected {
 	display: inline-block;
 	/*min-width: 60px;*/
 	width: auto;
-	height: 32px;
-	line-height: 32px;
+	height: 34px;
+	line-height: 34px;
 	/*padding-left: 10px;*/
 }
 .comment-controll-dropdown .dropdown-arrow {
 	display: inline-block;
-	width: 32px;
-	height: 32px;
+	width: 28px;
+	height: 34px;
 	float: right;
 	border-radius: 50%;
 	background-position: center;
@@ -764,7 +763,8 @@ aside {
 	transition: all .2s ease-in-out;
 }
 .comment-controll-dropdown .dropdown-options {
-	top: 40px;
+	top: 34px;
+	right: 0px;
 	position: absolute;
 	transition: all .2s ease-in-out;
 	opacity: 0;
@@ -779,10 +779,10 @@ aside {
 }
 .comment-controll-dropdown .dropdown-options .dropdown-option {
 	display: block;
-	min-width: 110px;
+	min-width: 80px;
 	width: auto;
-	height: 40px;
-	line-height: 40px;
+	height: 38px;
+	line-height: 38px;
 	padding: 0px 10px;
 }
 .comment-controll-dropdown .dropdown-options .dropdown-option:hover {
@@ -871,13 +871,13 @@ aside {
 	opacity: .6;
 }
 .comment-dropdown {
-	min-width: 120px;
+	min-width: 80px;
 	height: auto;
 	border-radius: 4px;
 	background-color: white;
 	position: absolute;
 	top: 40px;
-	right: -10px;
+	right: 0px;
 	overflow: hidden;
 	visibility: hidden;
 	opacity: 0;
