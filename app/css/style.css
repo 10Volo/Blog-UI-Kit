@@ -721,8 +721,10 @@ aside {
 	margin-top: 20px;
 }
 .comments-controll {
+	display: inline-block;
 	/*background-color: #eee;*/
 	height: auto;
+	float: right;
 }
 .comment-controll-dropdown {
 	display: inline-block;
@@ -733,25 +735,25 @@ aside {
 	cursor: pointer;
 	/*min-width: 100px;*/
 	width: auto;
-	height: 40px;
+	height: 32px;
 	/*border-left: 3px solid #41e1de;*/
 }
 .comment-controll-dropdown .dropdown-selected {
 	display: inline-block;
 	/*min-width: 60px;*/
 	width: auto;
-	height: 40px;
-	line-height: 40px;
+	height: 32px;
+	line-height: 32px;
 	/*padding-left: 10px;*/
 }
 .comment-controll-dropdown .dropdown-arrow {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 32px;
+	height: 32px;
 	float: right;
 	border-radius: 50%;
 	background-position: center;
-	background-size: 20px;
+	background-size: 16px;
 	background-image: url('../img/right-arrow.png');
 	background-repeat: no-repeat;
 	transition: all .2s ease-in-out;
@@ -788,8 +790,16 @@ aside {
 }
 
 .comments {
-	height: 500px;
-	padding-top: 15px;
+	height: auto;
+	padding-top: 10px;
+}
+.comments h2 {
+	display: inline-block;
+	font-size: 28px;
+	color: grey;	
+/*	height: 40px;
+	line-height: 40px;*/
+	padding-bottom: 25px;
 }
 .comment {
 	min-height: 100px;
@@ -844,7 +854,7 @@ aside {
 	right: 0px;
 	top: 0px;
 	cursor: pointer;
-	width: 40px;
+	width: 30px;
 	height: 40px;
 	display: inline-block;
 	text-align: center;

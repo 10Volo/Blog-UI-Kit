@@ -131,16 +131,17 @@ aside{width:100%;height:500px}
 .post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:100px;height:auto}
 .post-comments .comment-form form textarea:focus{border:2px solid #41e1de}
 .post-comments .comment-form form .button{margin-top:20px}
-.comments-controll{height:auto}
-.comment-controll-dropdown{display:inline-block;position:relative;color:#adadad;font-weight:700;cursor:pointer;width:auto;height:40px}
-.comment-controll-dropdown .dropdown-selected{display:inline-block;width:auto;height:40px;line-height:40px}
-.comment-controll-dropdown .dropdown-arrow{display:inline-block;width:40px;height:40px;float:right;border-radius:50%;background-position:center;background-size:20px;background-image:url(../img/right-arrow.png);background-repeat:no-repeat;transition:all .2s ease-in-out;transform:rotate(0)}
+.comments-controll{display:inline-block;height:auto;float:right}
+.comment-controll-dropdown{display:inline-block;position:relative;color:#adadad;font-weight:700;cursor:pointer;width:auto;height:32px}
+.comment-controll-dropdown .dropdown-selected{display:inline-block;width:auto;height:32px;line-height:32px}
+.comment-controll-dropdown .dropdown-arrow{display:inline-block;width:32px;height:32px;float:right;border-radius:50%;background-position:center;background-size:16px;background-image:url(../img/right-arrow.png);background-repeat:no-repeat;transition:all .2s ease-in-out;transform:rotate(0)}
 .comment-controll-dropdown .dropdown-arrow.rotated{transform:rotate(90deg);transition:all .2s ease-in-out}
 .comment-controll-dropdown .dropdown-options{top:40px;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden;border-radius:4px;z-index:9999}
 .comment-controll-dropdown .dropdown-options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
 .comment-controll-dropdown .dropdown-options .dropdown-option{display:block;min-width:110px;width:auto;height:40px;line-height:40px;padding:0 10px}
 .comment-controll-dropdown .dropdown-options .dropdown-option:hover{background-color:#f1f1f1}
-.comments{height:500px;padding-top:15px}
+.comments{height:auto;padding-top:10px}
+.comments h2{display:inline-block;font-size:28px;color:grey;padding-bottom:25px}
 .comment{min-height:100px;height:auto;border-radius:4px;margin-bottom:20px}
 .comment-header{height:40px;position:relative}
 .comment-author{width:auto;display:inline-block}
@@ -150,7 +151,7 @@ aside{width:100%;height:500px}
 .comment-header .comment-author a p.name{margin-top:2px;transition:all .2s}
 .comment-header .comment-author a:hover p.name{color:#737373}
 .comment-header .comment-author a p.date{font-size:14px;font-weight:400;color:#c1c1c1;height:18px}
-.comment-options{position:absolute;right:0;top:0;cursor:pointer;width:40px;height:40px;display:inline-block;line-height:40px}
+.comment-options{position:absolute;right:0;top:0;cursor:pointer;width:30px;height:40px;display:inline-block;line-height:40px}
 .comment-options span.options-icon{opacity:.25;transition:.2s;margin-top:12px}
 .comment-options:hover span.options-icon{opacity:.6}
 .comment-dropdown{min-width:120px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:-10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
