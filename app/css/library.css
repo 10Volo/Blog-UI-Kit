@@ -84,7 +84,7 @@
 	font-size: 16px;
 	border: none;
 	color: white;
-	background-color: #cac9cd;
+	background-color: #d6d6d6;
 	height: 34px;
 	line-height: 34px;
 	padding: 0 16px;
@@ -96,7 +96,7 @@
 	font-weight: bold;
 }
 .button:hover {
-	background-color: #b5b4b8;
+	background-color: #bebebe;
 }
 .button.big {
 	font-size: 26px;

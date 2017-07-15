@@ -1,8 +1,9 @@
 .page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg)}
 .card-options,.circle,.post-author,.post-author a,.post-author-name,.post-category,.post-date,.post-date p{display:inline-block}
 .card-options,.tag{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);text-align:center}
-.card-dropdown a,.card-title h2 a,.logo a,.post-body a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
+.card-dropdown a,.card-title h2 a,.desktop-nav .desktop-nav-link,.logo a,.post-body a,.post-category a,.post-comment a.post-comment-wrap,.post-header .post-author a,.tag a{text-decoration:none}
 .card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-size:cover;background-position:center}
+.card-cover,.comment-author-avatar,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-position:center}
 *{box-sizing:border-box;padding:0;margin:0}
 .card-wrap,section{padding:20px}
 body{font-family:Roboto,sans-serif}
@@ -27,27 +28,30 @@ aside{width:100%;height:500px}
 .card-options span.options-icon{opacity:.25;transition:.2s}
 .card-options:hover span.options-icon{opacity:.6}
 .card-dropdown{min-width:120px;height:auto;border-radius:4px;box-shadow:-2px -1px 20px 0 rgba(0,0,0,.2),2px 10px 20px 0 rgba(0,0,0,.2);background-color:#fff;position:absolute;top:40px;right:-10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
+.card-title h2 a,.tag{transition:all .2s;font-weight:700}
 .card-dropdown.show{visibility:visible;opacity:1;z-index:9999}
 .card-dropdown a{display:block;padding:12px 15px;color:grey}
 .card-title h2,.tag{display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
 .card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
-.card-info{height:auto;padding:20px 20px 10px;position:relative}
+.card-info{height:auto;padding:20px 20px 5px;position:relative}
 .navigation-left,.navigation-top{position:fixed;background-color:#fff}
 .card-controll{height:42px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
 .card-title{padding:10px 0}
-.card-title h2{font-size:1.6em}
-.card-title h2 a{color:grey;font-weight:700;transition:all .2s}
+.card-title h2{font-size:1.5em}
+.card-title h2 a{color:grey}
 .card-title h2 a:hover{color:#41e4de}
 .card-tags{width:100%}
-.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;color:grey;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
+.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;color:grey;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
 .desktop-nav .desktop-nav-link,.logo{display:inline-block;line-height:80px}
+.tag:hover{background-color:#d6d6d6}
 .tag a{color:inherit}
+.tag a:hover{text-decoration:none}
 .post-comment,.post-like,.post-view{display:inline-block;height:40px;min-width:40px;width:auto;transition:all .2s;color:#c1c1c1;font-weight:700}
 .post-comment button.post-comment-wrap,.post-like button.post-like-wrap{margin:10px 20px}
-.post-comment{cursor:pointer}
-.post-comment button.post-comment-wrap{margin-right:10px}
+.post-comment{cursor:pointer;height:30px}
+.post-comment a.post-comment-wrap{margin-left:20px;display:inline-block;height:30px;width:40px;color:#c1c1c1}
 .post-comment span.comment-icon{opacity:.25;transition:.2s}
 .post-comment:hover span.comment-icon{opacity:.6}
 .post-like{cursor:pointer;float:right}
@@ -63,7 +67,7 @@ aside{width:100%;height:500px}
 .logo a{color:#40e0d0}
 .desktop-nav{display:inline-block;height:80px;width:calc(100% - 153px);float:right;padding:0 20px}
 .desktop-nav ul li{display:inline-block}
-.desktop-nav .desktop-nav-link{font-size:20px;text-decoration:none;color:#9a9a9a;background-color:#fff;height:80px;padding:0 15px;transition:.2s ease-in-out}
+.desktop-nav .desktop-nav-link{font-size:20px;color:#9a9a9a;background-color:#fff;height:80px;padding:0 15px;transition:.2s ease-in-out}
 .desktop-nav .desktop-nav-link:hover{color:#737373}
 .desktop-nav .desktop-nav-link.active{border-bottom:5px solid #40e0d0;color:#737373}
 .mobile-nav{display:none}
@@ -124,7 +128,7 @@ aside{width:100%;height:500px}
 .post-comments{padding:10px 30px}
 .post-comments h2{font-size:28px;color:grey}
 .post-comments .comment-form form{padding:20px 0}
-.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:150px;height:auto}
+.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:100px;height:auto}
 .post-comments .comment-form form textarea:focus{border:2px solid #41e1de}
 .post-comments .comment-form form .button{margin-top:20px}
 .comments-controll{height:auto}
@@ -136,7 +140,17 @@ aside{width:100%;height:500px}
 .comment-controll-dropdown .options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
 .comment-controll-dropdown .options .option{display:block;min-width:110px;width:auto;height:40px;line-height:40px;padding:0 10px}
 .comment-controll-dropdown .options .option:hover{background-color:#f1f1f1}
-.comments{height:500px}
+.comments{height:500px;padding-top:20px}
+.comment{min-height:100px;height:auto;border:1px solid #eee;border-radius:4px}
+.comment-author{width:auto;display:inline-block}
+.comment-author a{display:inline-block;font-weight:700;color:#9a9a9a;text-decoration:none}
+.comment-author-avatar{height:40px;width:40px;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;position:absolute}
+.comment-header .comment-author a p{margin-left:50px}
+.comment-header .comment-author a p.name{margin-top:2px;transition:all .2s}
+.comment-header .comment-author a:hover p.name{color:#737373}
+.comment-header .comment-author a p.date{font-size:14px;font-weight:400;color:#c1c1c1;height:18px}
+.comment-body{min-height:60px;background-color:#eee}
+.comment-controll{height:40px}
 @media screen and (max-width:1200px){.content,section{width:100%}
 }
 @media screen and (max-width:780px){[class*=col-],section{padding:5px}
@@ -145,7 +159,7 @@ aside{width:100%;height:500px}
 .navigation-top{height:60px}
 .main-content{padding-top:60px}
 .divider{width:100px}
-.card-wrap{padding:0}
+.card-wrap{padding:15px}
 .post{width:100%;border:none}
 .post-cover{height:400px}
 .post-header{padding:25px 15px 30px}
