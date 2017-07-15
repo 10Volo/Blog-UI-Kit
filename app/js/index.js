@@ -1,6 +1,9 @@
-var optionButton = document.querySelectorAll('.card-options');
-var dropdowns = document.querySelectorAll('.card-dropdown');
+var optionButton = document.querySelectorAll('.options');
+var dropdowns = document.querySelectorAll('.dropdown');
 var likeButtons = Array.from(document.querySelectorAll('.post-like'));
+
+console.log('options', optionButton);
+console.log('dropdows', dropdowns);
 
 likeButtons.forEach(function(like){
 	like.addEventListener('click', function(e){
@@ -33,7 +36,7 @@ optionButton.forEach(function(el){
 });
 
 window.addEventListener('click', function(ev){
-	var match  = ev.target.className == 'card-options' || ev.target.className == 'icon options-icon';
+	var match  = ev.target.classList.contains('options') || ev.target.className == 'icon options-icon';
 	if ( !match ){
 		dropdowns.forEach(function(d){
 			if (d.classList.contains('show')){
@@ -44,7 +47,7 @@ window.addEventListener('click', function(ev){
 });
 
 var dropdownList = document.querySelector('#dropdown') || null;
-var dropdownListOptions = document.querySelector('#dropdown .options') || null;
+var dropdownListOptions = document.querySelector('#dropdown .dropdown-options') || null;
 var dropdownListArrow = document.querySelector('#dropdown .dropdown-arrow') || null;
 var dropdownListSelected = document.querySelector('#dropdown .dropdown-selected') || null;
 

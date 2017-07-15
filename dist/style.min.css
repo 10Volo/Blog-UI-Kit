@@ -1,9 +1,9 @@
 .page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg)}
 .card-options,.circle,.post-author,.post-author a,.post-author-name,.post-category,.post-date,.post-date p{display:inline-block}
-.card-options,.tag{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);text-align:center}
 .card-dropdown a,.card-title h2 a,.desktop-nav .desktop-nav-link,.logo a,.post-body a,.post-category a,.post-comment a.post-comment-wrap,.post-header .post-author a,.tag a{text-decoration:none}
 .card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-size:cover;background-position:center}
 .card-cover,.comment-author-avatar,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-position:center}
+.card-options,.comment-options,.tag{text-align:center;user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
 *{box-sizing:border-box;padding:0;margin:0}
 .card-wrap,section{padding:20px}
 body{font-family:Roboto,sans-serif}
@@ -27,7 +27,7 @@ aside{width:100%;height:500px}
 .card-options{position:absolute;right:0;top:0;cursor:pointer;width:50px;height:54px;line-height:50px}
 .card-options span.options-icon{opacity:.25;transition:.2s}
 .card-options:hover span.options-icon{opacity:.6}
-.card-dropdown{min-width:120px;height:auto;border-radius:4px;box-shadow:-2px -1px 20px 0 rgba(0,0,0,.2),2px 10px 20px 0 rgba(0,0,0,.2);background-color:#fff;position:absolute;top:40px;right:-10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
+.card-dropdown{min-width:120px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:-10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
 .card-title h2 a,.tag{transition:all .2s;font-weight:700}
 .card-dropdown.show{visibility:visible;opacity:1;z-index:9999}
 .card-dropdown a{display:block;padding:12px 15px;color:grey}
@@ -133,15 +133,16 @@ aside{width:100%;height:500px}
 .post-comments .comment-form form .button{margin-top:20px}
 .comments-controll{height:auto}
 .comment-controll-dropdown{display:inline-block;position:relative;color:#adadad;font-weight:700;cursor:pointer;width:auto;height:40px}
-.comment-controll-dropdown .dropdown-selected{display:inline-block;width:auto;height:40px;line-height:40px;padding-left:10px}
+.comment-controll-dropdown .dropdown-selected{display:inline-block;width:auto;height:40px;line-height:40px}
 .comment-controll-dropdown .dropdown-arrow{display:inline-block;width:40px;height:40px;float:right;border-radius:50%;background-position:center;background-size:20px;background-image:url(../img/right-arrow.png);background-repeat:no-repeat;transition:all .2s ease-in-out;transform:rotate(0)}
 .comment-controll-dropdown .dropdown-arrow.rotated{transform:rotate(90deg);transition:all .2s ease-in-out}
-.comment-controll-dropdown .options{top:40px;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden;border-radius:4px}
-.comment-controll-dropdown .options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
-.comment-controll-dropdown .options .option{display:block;min-width:110px;width:auto;height:40px;line-height:40px;padding:0 10px}
-.comment-controll-dropdown .options .option:hover{background-color:#f1f1f1}
-.comments{height:500px;padding-top:20px}
-.comment{min-height:100px;height:auto;border:1px solid #eee;border-radius:4px}
+.comment-controll-dropdown .dropdown-options{top:40px;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden;border-radius:4px;z-index:9999}
+.comment-controll-dropdown .dropdown-options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
+.comment-controll-dropdown .dropdown-options .dropdown-option{display:block;min-width:110px;width:auto;height:40px;line-height:40px;padding:0 10px}
+.comment-controll-dropdown .dropdown-options .dropdown-option:hover{background-color:#f1f1f1}
+.comments{height:500px;padding-top:15px}
+.comment{min-height:100px;height:auto;border-radius:4px}
+.comment-header{position:relative}
 .comment-author{width:auto;display:inline-block}
 .comment-author a{display:inline-block;font-weight:700;color:#9a9a9a;text-decoration:none}
 .comment-author-avatar{height:40px;width:40px;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;position:absolute}
@@ -149,8 +150,21 @@ aside{width:100%;height:500px}
 .comment-header .comment-author a p.name{margin-top:2px;transition:all .2s}
 .comment-header .comment-author a:hover p.name{color:#737373}
 .comment-header .comment-author a p.date{font-size:14px;font-weight:400;color:#c1c1c1;height:18px}
-.comment-body{min-height:60px;background-color:#eee}
-.comment-controll{height:40px}
+.comment-options{position:absolute;right:0;top:0;cursor:pointer;width:40px;height:40px;display:inline-block;line-height:40px}
+.comment-options span.options-icon{opacity:.25;transition:.2s;margin-top:12px}
+.comment-options:hover span.options-icon{opacity:.6}
+.comment-dropdown{min-width:120px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:-10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
+.comment-dropdown.show{visibility:visible;opacity:1;z-index:9999}
+.comment-dropdown a{display:block;text-decoration:none;padding:12px 15px;color:grey}
+.comment-dropdown a:hover{background-color:#f1f1f1}
+.comment-body{min-height:60px;padding:0}
+.comment-body p{color:#737373;font-size:18px;line-height:28px}
+.comment-controll{height:40px;border:1px solid #eee}
+.comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:100px;background-color:#eee}
+.comment-controll .comment-reply,.comment-controll .comment-reply-icon{display:inline-block;height:40px;width:40px;background-color:grey}
+.comment-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
+.comment-controll .comment-like{display:inline-block;float:right}
+.comment-controll .comment-like .post-like-wrap{margin:10px}
 @media screen and (max-width:1200px){.content,section{width:100%}
 }
 @media screen and (max-width:780px){[class*=col-],section{padding:5px}
@@ -159,7 +173,7 @@ aside{width:100%;height:500px}
 .navigation-top{height:60px}
 .main-content{padding-top:60px}
 .divider{width:100px}
-.card-wrap{padding:15px}
+.card-wrap{padding:10px}
 .post{width:100%;border:none}
 .post-cover{height:400px}
 .post-header{padding:25px 15px 30px}
