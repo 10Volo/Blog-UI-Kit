@@ -161,7 +161,7 @@ aside{width:100%;height:500px}
 .comment-body{min-height:40px;height:auto;padding-top:15px;padding-bottom:10px}
 .comment-body p{color:#737373;font-size:18px;line-height:28px}
 .comment-controll{height:50px;padding-bottom:10px;border-bottom:2px solid #eee}
-.comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:auto;padding-top:5px;cursor:pointer}
+.comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:auto;padding-top:5px;cursor:pointer;text-decoration:none}
 .comment-controll .comment-reply-wrapper:hover .comment-reply-icon{opacity:1}
 .comment-controll .comment-reply-icon{display:inline-block;height:30px;width:30px;background-size:20px;background-position:10px 5px;background-image:url(../img/share-option.png);background-repeat:no-repeat;opacity:.5;transition:all .2s}
 .comment-controll .comment-reply{height:30px;width:30px;background-position:center;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;display:inline-block}

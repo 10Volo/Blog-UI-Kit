@@ -929,6 +929,7 @@ aside {
 	width: auto;
 	padding-top: 5px;
 	cursor: pointer;
+	text-decoration: none;
 }
 .comment-controll .comment-reply-wrapper:hover .comment-reply-icon {
 	opacity: 1;
