@@ -158,7 +158,7 @@ aside {
 	opacity: .6;
 }
 .card-dropdown {
-	min-width: 120px;
+	min-width: 80px;
 	height: auto;
 	border-radius: 4px;
 	background-color: white;
@@ -177,10 +177,14 @@ aside {
 }
 .card-dropdown a {
 	display: block;
+	height: 40px;
+	min-width: 80px;
+	width: auto;
 	text-decoration: none;
-	padding: 12px 15px;
-	/*color: #707070;*/
-	color: grey;
+	padding: 0px 15px;
+	color: #adadad;
+	font-weight: bold;
+	line-height: 40px;
 }
 .card-dropdown a:hover {
 	background-color: #f1f1f1;
@@ -712,6 +716,7 @@ aside {
 	transition: border .2s;
 	min-height: 100px;
 	height: auto;
+	resize: none;
 }
 .post-comments .comment-form form textarea:focus {
 	border: 2px solid #41e1de;
@@ -781,9 +786,9 @@ aside {
 	display: block;
 	min-width: 80px;
 	width: auto;
-	height: 38px;
-	line-height: 38px;
-	padding: 0px 10px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 15px;
 }
 .comment-controll-dropdown .dropdown-options .dropdown-option:hover {
 	background-color: #f1f1f1;
@@ -890,10 +895,14 @@ aside {
 }
 .comment-dropdown a {
 	display: block;
+	height: 40px;
+	min-width: 80px;
+	width: auto;
 	text-decoration: none;
-	padding: 12px 15px;
-	/*color: #707070;*/
-	color: grey;
+	padding: 0px 15px;
+	color: #adadad;
+	font-weight: bold;
+	line-height: 40px;
 }
 .comment-dropdown a:hover {
 	background-color: #f1f1f1;
@@ -901,7 +910,8 @@ aside {
 .comment-body {
 	min-height: 40px;
 	height: auto;
-	padding-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 10px;
 }
 .comment-body p {
 	color: #737373;
@@ -1045,6 +1055,10 @@ aside {
 	}
 	.post-comments {
 		padding: 0px 15px;
+	}
+	.comment-body {
+		padding-top: 10px;
+		padding-bottom: 0px;
 	}
 }
 @media screen and (max-width: 530px) { 

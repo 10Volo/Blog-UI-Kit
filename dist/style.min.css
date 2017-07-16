@@ -27,11 +27,11 @@ aside{width:100%;height:500px}
 .card-options{position:absolute;right:0;top:0;cursor:pointer;width:50px;height:54px;line-height:50px}
 .card-options span.options-icon{opacity:.25;transition:.2s}
 .card-options:hover span.options-icon{opacity:.6}
-.card-dropdown{min-width:120px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
-.card-title h2 a,.tag{transition:all .2s;font-weight:700}
+.card-dropdown{min-width:80px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
 .card-dropdown.show{visibility:visible;opacity:1;z-index:9999}
-.card-dropdown a{display:block;padding:12px 15px;color:grey}
+.card-dropdown a{display:block;height:40px;min-width:80px;width:auto;padding:0 15px;color:#adadad;font-weight:700;line-height:40px}
 .card-title h2,.tag{display:inline-block}
+.post-comment,.post-like,.post-view,.tag{min-width:40px;transition:all .2s;font-weight:700}
 .card-dropdown a:hover{background-color:#f1f1f1}
 .card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .card-info{height:auto;padding:20px 20px 5px;position:relative}
@@ -40,15 +40,15 @@ aside{width:100%;height:500px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
 .card-title{padding:10px 0}
 .card-title h2{font-size:1.5em}
-.card-title h2 a{color:grey}
+.card-title h2 a{color:grey;font-weight:700;transition:all .2s}
 .card-title h2 a:hover{color:#41e4de}
 .card-tags{width:100%}
-.tag{font-size:14px;min-width:40px;padding:0 7px;height:24px;line-height:24px;color:grey;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
+.tag{font-size:14px;padding:0 7px;height:24px;line-height:24px;color:grey;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
 .desktop-nav .desktop-nav-link,.logo{display:inline-block;line-height:80px}
 .tag:hover{background-color:#d6d6d6}
 .tag a{color:inherit}
 .tag a:hover{text-decoration:none}
-.post-comment,.post-like,.post-view{display:inline-block;height:40px;min-width:40px;width:auto;transition:all .2s;color:#c1c1c1;font-weight:700}
+.post-comment,.post-like,.post-view{display:inline-block;height:40px;width:auto;color:#c1c1c1}
 .post-comment button.post-comment-wrap,.post-like button.post-like-wrap{margin:10px 20px}
 .post-comment{cursor:pointer;height:30px}
 .post-comment a.post-comment-wrap{margin-left:20px;display:inline-block;height:30px;width:40px;color:#c1c1c1}
@@ -128,7 +128,7 @@ aside{width:100%;height:500px}
 .post-comments{padding:10px 30px}
 .post-comments h2{font-size:28px;color:grey}
 .post-comments .comment-form form{padding:20px 0}
-.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:100px;height:auto}
+.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:100px;height:auto;resize:none}
 .post-comments .comment-form form textarea:focus{border:2px solid #41e1de}
 .post-comments .comment-form form .button{margin-top:20px}
 .comments-controll{display:inline-block;height:auto;float:right}
@@ -138,7 +138,7 @@ aside{width:100%;height:500px}
 .comment-controll-dropdown .dropdown-arrow.rotated{transform:rotate(90deg);transition:all .2s ease-in-out}
 .comment-controll-dropdown .dropdown-options{top:34px;right:0;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden;border-radius:4px;z-index:9999}
 .comment-controll-dropdown .dropdown-options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
-.comment-controll-dropdown .dropdown-options .dropdown-option{display:block;min-width:80px;width:auto;height:38px;line-height:38px;padding:0 10px}
+.comment-controll-dropdown .dropdown-options .dropdown-option{display:block;min-width:80px;width:auto;height:40px;line-height:40px;padding:0 15px}
 .comment-controll-dropdown .dropdown-options .dropdown-option:hover{background-color:#f1f1f1}
 .comments{height:auto;padding-top:10px}
 .comments h2{display:inline-block;font-size:28px;color:grey;padding-bottom:25px}
@@ -156,9 +156,9 @@ aside{width:100%;height:500px}
 .comment-options:hover span.options-icon{opacity:.6}
 .comment-dropdown{min-width:80px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:0;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
 .comment-dropdown.show{visibility:visible;opacity:1;z-index:9999}
-.comment-dropdown a{display:block;text-decoration:none;padding:12px 15px;color:grey}
+.comment-dropdown a{display:block;height:40px;min-width:80px;width:auto;text-decoration:none;padding:0 15px;color:#adadad;font-weight:700;line-height:40px}
 .comment-dropdown a:hover{background-color:#f1f1f1}
-.comment-body{min-height:40px;height:auto;padding-top:10px}
+.comment-body{min-height:40px;height:auto;padding-top:15px;padding-bottom:10px}
 .comment-body p{color:#737373;font-size:18px;line-height:28px}
 .comment-controll{height:50px;padding-bottom:10px;border-bottom:2px solid #eee}
 .comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:auto;padding-top:5px;cursor:pointer}
@@ -187,6 +187,7 @@ aside{width:100%;height:500px}
 .post-controll .divider{margin-left:15px}
 .post-bottom{padding:30px 15px}
 .post-comments,.post-sidebar{padding:0 15px}
+.comment-body{padding-top:10px;padding-bottom:0}
 }
 @media screen and (max-width:530px){.desktop-nav{display:none}
 .post-cover{height:200px}
