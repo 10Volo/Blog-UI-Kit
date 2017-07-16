@@ -2,9 +2,6 @@ var optionButton = document.querySelectorAll('.options');
 var dropdowns = document.querySelectorAll('.dropdown');
 var likeButtons = Array.from(document.querySelectorAll('.post-like'));
 
-console.log('options', optionButton);
-console.log('dropdows', dropdowns);
-
 likeButtons.forEach(function(like){
 	like.addEventListener('click', function(e){
 		like.classList.add('presed');
@@ -68,3 +65,25 @@ if (dropdownListOptions && dropdownListSelected){
 		dropdownListSelected.textContent = option;
 	});
 }
+
+
+var commentScroll = document.querySelectorAll('.comment-reply-wrapper');
+
+if (commentScroll.length > 0){
+
+	commentScroll.forEach(function(el){
+		el.addEventListener('click', function(ev){
+			var to = el.dataset.to;
+			var toComment = document.querySelector('[data-id="' + to + '"]');
+			var offset = toComment.offsetTop;
+			// console.log(toComment);
+			// console.log(toComment.offsetTop);
+			window.scrollTo(0, offset - 100);
+		});
+	});
+	
+}
+
+// var relatedPosts = document.querySelector('')
+
+
