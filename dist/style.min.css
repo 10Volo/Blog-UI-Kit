@@ -35,7 +35,6 @@ aside{width:100%;height:500px}
 .card-dropdown a:hover{background-color:#f1f1f1}
 .card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .card-info{height:auto;padding:20px 20px 5px;position:relative}
-.navigation-left,.navigation-top{position:fixed;background-color:#fff}
 .card-controll{height:42px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
 .card-title{padding:10px 0}
@@ -46,6 +45,7 @@ aside{width:100%;height:500px}
 .tag{font-size:14px;padding:0 7px;height:24px;line-height:24px;color:grey;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
 .desktop-nav .desktop-nav-link,.logo{display:inline-block;line-height:80px}
 .tag:hover{background-color:#d6d6d6}
+.navigation-top,.post-wrapper{background-color:#fff}
 .tag a{color:inherit}
 .tag a:hover{text-decoration:none}
 .post-comment,.post-like,.post-view{display:inline-block;height:40px;width:auto;color:#c1c1c1}
@@ -61,7 +61,7 @@ aside{width:100%;height:500px}
 .post-like.liked span.like-icon{background-image:url(../img/like-active.png)}
 .post-view{margin:10px 0 10px 20px;height:17px}
 .navigation-left,.navigation-top{z-index:9999}
-.navigation-top{height:80px;width:100%}
+.navigation-top{height:80px;width:100%;position:fixed}
 .navigation-links{height:80px;width:80%;margin:0 auto;padding:0 20px}
 .logo{height:80px;width:auto;margin-left:10px;font-size:18px}
 .logo a{color:#40e0d0}
@@ -71,12 +71,10 @@ aside{width:100%;height:500px}
 .desktop-nav .desktop-nav-link:hover{color:#737373}
 .desktop-nav .desktop-nav-link.active{border-bottom:5px solid #40e0d0;color:#737373}
 .mobile-nav{display:none}
-.navigation-left{height:100vh;width:250px;display:none}
-.main-content{padding-top:80px;background-color:#f1f1f1;height:3000px;max-width:1440px}
+.main-content{padding-top:80px;max-width:1440px}
 .content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%;display:none}
 .content-controll{height:100px;width:100%}
 .content{width:80%;margin:0 auto;z-index:0;height:auto}
-.post-wrapper{background-color:#fff}
 .post-cover{width:100%;height:350px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .post{height:auto}
 .post-header{padding:40px 30px}
@@ -120,7 +118,7 @@ aside{width:100%;height:500px}
 .post-sidebar{color:grey;padding:35px 20px 20px;height:auto}
 .post-sidebar h2{margin-bottom:20px}
 .related-post{height:60px;margin-bottom:15px;overflow:hidden}
-.related-post-cover{width:60px;height:60px;display:inline-block;background-image:url(../img/vue-cover.jpeg);border-radius:4px}
+.related-post-cover{width:60px;height:60px;display:inline-block;background-image:url(../img/shameless7.jpg);border-radius:4px}
 .related-post-title{height:60px;width:calc(100% - 60px);float:right;padding-left:10px;transition:all .2s;display:table}
 .related-post-title h3{display:table-cell;height:60px;vertical-align:middle}
 .related-post a .related-post-title{color:#adadad;text-decoration:none}
@@ -128,7 +126,7 @@ aside{width:100%;height:500px}
 .post-comments{padding:10px 30px}
 .post-comments h2{font-size:28px;color:grey}
 .post-comments .comment-form form{padding:20px 0}
-.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:15px;font-size:18px;color:#737373;transition:border .2s;min-height:100px;height:auto;resize:none}
+.post-comments .comment-form form textarea{width:100%;outline:0;border:2px solid #eee;border-radius:4px;padding:10px;font-size:18px;color:#737373;height:100px;resize:none;transition:all .3s}
 .post-comments .comment-form form textarea:focus{border:2px solid #41e1de}
 .post-comments .comment-form form .button{margin-top:20px}
 .comments-controll{display:inline-block;height:auto;float:right}
@@ -140,7 +138,7 @@ aside{width:100%;height:500px}
 .comment-controll-dropdown .dropdown-options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
 .comment-controll-dropdown .dropdown-options .dropdown-option{display:block;min-width:80px;width:auto;height:40px;line-height:40px;padding:0 15px}
 .comment-controll-dropdown .dropdown-options .dropdown-option:hover{background-color:#f1f1f1}
-.comments{height:auto;padding-top:10px}
+.comments{height:auto;padding-top:30px}
 .comments h2{display:inline-block;font-size:28px;color:grey;padding-bottom:25px}
 .comment{min-height:100px;height:auto;border-radius:4px;margin-bottom:20px}
 .comment-header{height:40px;position:relative}
@@ -158,8 +156,8 @@ aside{width:100%;height:500px}
 .comment-dropdown.show{visibility:visible;opacity:1;z-index:9999}
 .comment-dropdown a{display:block;height:40px;min-width:80px;width:auto;text-decoration:none;padding:0 15px;color:#adadad;font-weight:700;line-height:40px}
 .comment-dropdown a:hover{background-color:#f1f1f1}
-.comment-body{min-height:40px;height:auto;padding-top:15px;padding-bottom:10px}
-.comment-body p{color:#737373;font-size:18px;line-height:28px}
+.comment-body{min-height:40px;height:auto;padding:15px 20px 10px 50px}
+.comment-body p{color:#737373;font-size:16px;line-height:28px}
 .comment-controll{height:50px;padding-bottom:10px;border-bottom:2px solid #eee}
 .comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:auto;padding-top:5px;cursor:pointer;text-decoration:none}
 .comment-controll .comment-reply-wrapper:hover .comment-reply-icon{opacity:1}
@@ -168,6 +166,9 @@ aside{width:100%;height:500px}
 .comment-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
 .comment-controll .comment-like{display:inline-block;float:right}
 .comment-controll .comment-like .post-like-wrap{margin:10px}
+.forum{margin-left:350px;padding:40px}
+.navigation-left{height:100vh;width:350px;background-color:#fff;top:80px;position:fixed;z-index:0;display:none}
+.topic{height:150px;width:100%;border-radius:4px;border-left:5px solid #ffdc5a}
 @media screen and (max-width:1200px){.content,section{width:100%}
 }
 @media screen and (max-width:780px){[class*=col-],section{padding:5px}
@@ -189,8 +190,9 @@ aside{width:100%;height:500px}
 .post-comments,.post-sidebar{padding:0 15px}
 .comment-body{padding-top:10px;padding-bottom:0}
 }
-@media screen and (max-width:530px){.desktop-nav{display:none}
+@media screen and (max-width:530px){.desktop-nav,.navigation-left{display:none}
 .post-cover{height:200px}
 .post-title{font-size:18px}
 .post-body h2,.post-body h3{margin:15px 0}
+.forum{margin:0;padding:15px}
 }

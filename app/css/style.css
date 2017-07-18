@@ -397,18 +397,10 @@ aside {
 	display: none;
 }
 
-.navigation-left {
-	height: 100vh;
-	width: 250px;
-	background-color: white;
-	position: fixed;
-	display: none;
-}
-
 .main-content {
 	padding-top: 80px;
-	background-color: #f1f1f1;
-	height: 3000px;
+	/*background-color: #f1f1f1;*/
+	/*height: 3000px;*/
 	max-width: 1440px;
 }
 .content-header {
@@ -662,7 +654,7 @@ aside {
 	display: inline-block;
 	background-position: center;
 	background-size: cover;
-	background-image: url('../img/vue-cover.jpeg');
+	background-image: url('../img/shameless7.jpg');
 	border-radius: 4px;
 /*	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;*/
@@ -710,16 +702,18 @@ aside {
 	outline: none;
 	border: 2px solid #eee;
 	border-radius: 4px;
-	padding: 15px;
+	padding: 10px;
 	font-size: 18px;
 	color: #737373;
-	transition: border .2s;
-	min-height: 100px;
-	height: auto;
+	/*transition: border .2s;*/
+	height: 100px;
+	/*height: auto;*/
 	resize: none;
+	transition: all .3s;
 }
 .post-comments .comment-form form textarea:focus {
 	border: 2px solid #41e1de;
+	/*height: 300px;*/
 }
 .post-comments .comment-form form .button {
 	margin-top: 20px;
@@ -796,7 +790,7 @@ aside {
 
 .comments {
 	height: auto;
-	padding-top: 10px;
+	padding-top: 30px;
 }
 .comments h2 {
 	display: inline-block;
@@ -910,12 +904,13 @@ aside {
 .comment-body {
 	min-height: 40px;
 	height: auto;
-	padding-top: 15px;
-	padding-bottom: 10px;
+/*	padding-top: 15px;
+	padding-bottom: 10px;*/
+	padding: 15px 20px 10px 50px;
 }
 .comment-body p {
 	color: #737373;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 28px;
 }
 .comment-controll {
@@ -973,6 +968,30 @@ aside {
 .comment-controll .comment-like .post-like-wrap {
 	margin: 10px 10px;
 }
+
+
+
+.forum {
+	margin-left: 350px;
+	padding: 40px;
+}
+.navigation-left {
+	height: 100vh;
+	width: 350px;
+	background-color: white;
+	top:80px;
+	position: fixed;
+	z-index: 0;
+	display: none;
+}
+.topic {
+	height: 150px;
+	width: 100%;
+	border-radius: 4px;
+	border-left: 5px solid #ffdc5a;
+}
+
+
 
 
 
@@ -1076,5 +1095,12 @@ aside {
 	.post-body h2,
 	.post-body h3 {
 		margin: 15px 0px;
+	}
+	.navigation-left {
+		display: none;
+	}
+	.forum {
+		margin: 0;
+		padding: 15px;
 	}
 }

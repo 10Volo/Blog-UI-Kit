@@ -84,6 +84,17 @@ if (commentScroll.length > 0){
 	
 }
 
-// var relatedPosts = document.querySelector('')
+var commentTextArea = document.querySelector('.post-comments .comment-form form textarea');
 
+// if (commentTextArea){
+// 	console.log(commentTextArea);
+// 	var textAreaOffset = commentTextArea.offsetTop;
+// 	commentTextArea.addEventListener('click', function(ev){
+// 		console.log(textAreaOffset);
+// 		setTimeout(function(){
+// 			window.scrollTo(0, textAreaOffset - 300);
+// 		}, 100);
+// 		commentTextArea.classList.add('active');
+// 	});
+// }
 
