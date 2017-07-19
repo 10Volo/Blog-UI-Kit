@@ -245,7 +245,7 @@ aside {
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 12px 17px;
+	padding: 15px 17px;
 	padding-bottom: 5px;
 	position: relative;
 }
@@ -493,7 +493,7 @@ aside {
 	padding: 40px 30px 40px 30px;
 }
 .post-header .post-author {
-	height: 40px;
+	height: 50px;
 }
 .post-header .post-author a {
 	text-decoration: none;
@@ -1139,6 +1139,19 @@ aside {
 
 	.post-cover {
 		height: 200px;
+	}
+	.post-header .post-author {
+		height: 40px;
+	}
+	.post-header .post-author a p {
+		margin-left: 50px;
+	}
+	.post-header .post-author a p.name {
+		margin-top: 3px;
+	}
+	.post-header .post-author-avatar {
+		height: 40px;
+		width: 40px;
 	}
 	.post-title {
 		font-size: 18px;
