@@ -73,8 +73,9 @@ aside {
 /*Date*/
 
 .post-category {
-	float: right;
+	/*float: right;*/
 	display: inline-block;
+	/*display: none;*/
 }
 .post-category a {
 	text-decoration: none;
@@ -91,6 +92,7 @@ aside {
 	color: #c1c1c1;
 	font-size: 14px;
 	margin-top: 3px;
+	display: none;
 }
 .post-date p {
 	display: inline-block;
@@ -134,8 +136,50 @@ aside {
 }
 .card-top {
 	height: auto;
-	padding: 12px 20px;
+	padding: 12px 17px;
+	padding-bottom: 10px;
+	/*padding-bottom: 0px;*/
 	/*display: none;*/
+}
+.card-author {
+	width: auto;
+	display: inline-block;
+}
+.card-author a {
+	display: inline-block;
+	font-weight: bold;
+	/*color: #1ca7ea;*/
+	color: #9a9a9a;
+	text-decoration: none;
+}
+.card-author-avatar {
+	height: 30px;
+	width: 30px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../img//gradient-sea.jpg');
+	border-radius: 50%;
+	position: absolute;
+}
+.card-author a p {
+	margin-left: 40px;
+}
+.card-author a p.name {
+	font-size: 14px;
+	margin-top: 1px;
+	height: 15px;
+	line-height: 14px;
+	transition: all .2s;
+}
+.card-author a:hover p.name {
+	color: #737373;
+}
+.card-author a p.date {
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal;
+	color: #c1c1c1;
+	height: 13px;
 }
 .card-options {
 	position: absolute;
@@ -143,7 +187,7 @@ aside {
 	top: 0px;
 	cursor: pointer;
 	width: 50px;
-	height: 54px;
+	height: 53px;
 	display: inline-block;
 	text-align: center;
 	line-height: 50px;
@@ -196,18 +240,18 @@ aside {
 	background-size: cover;
 	background-image: url(../img/wallpaper-1bae1.jpg);
 	/*display: none;*/
-	/*margin: 0px 15px;*/
+	/*margin: 0px 20px;*/
 }
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 20px;
+	padding: 12px 17px;
 	padding-bottom: 5px;
 	position: relative;
 }
 .card-controll {
 	/*border-top: 1px solid #d6d6d6;*/
-	height: 42px;
+	height: 35px;
 }
 .card-controll div button {
 	cursor: pointer;
@@ -223,7 +267,7 @@ aside {
 	padding: 10px 0px;
 }
 .card-title h2 {
-	font-size: 1.5em;
+	font-size: 24px;
 	display: inline-block;
 }
 .card-title h2 a {
@@ -245,9 +289,9 @@ aside {
 	display: inline-block;
 	min-width: 40px;
 	padding: 0px 7px;
-	height: 24px;
+	height: 22px;
 	text-align: center;
-	line-height: 24px;
+	line-height: 22px;
 	color: grey;
 	font-weight: bold;
 	border-radius: 3px;
@@ -273,22 +317,25 @@ aside {
 
 .post-like, .post-view, .post-comment {
 	display: inline-block;
-	height: 40px;
+	height: 30px;
 	min-width: 40px;
 	width: auto;
 	transition: all .2s;
+}
+.post-like span.count, .post-view span.count, .post-comment span.count {
 	color: #c1c1c1;
+	font-size: 14px;
 	font-weight: bold;
 }
-.post-like button.post-like-wrap, .post-comment button.post-comment-wrap {
-	margin: 10px 20px;
+.post-like button.post-like-wrap {
+	margin: 5px 17px;
 }
 .post-comment {
 	cursor: pointer;
 	height: 30px;
 }
 .post-comment a.post-comment-wrap {
-	margin-left: 20px;
+	margin-left: 15px;
 	display: inline-block;
 	height: 30px;
 	width: 40px;
@@ -307,13 +354,12 @@ aside {
 	float: right;
 }
 .post-like span.like-icon {
-	transition: all .15 ease-in-out;
+	transition: all .15s ease-in-out;
 	transform: scale(1);
 	opacity: 1;
 }
 .post-like:hover span.like-icon{
 	transition: all .15s ease-in-out;
-	
 }
 .post-like.presed span.like-icon {
 	transition: all .15s ease-in-out;
@@ -326,7 +372,7 @@ aside {
 }
 .post-view {
 	/*float: right;*/
-	margin: 10px 20px;
+	margin: 5px 17px;
 	margin-right: 0px;
 	height: 17px;
 }
@@ -400,7 +446,7 @@ aside {
 .main-content {
 	padding-top: 80px;
 	/*background-color: #f1f1f1;*/
-	/*height: 3000px;*/
+	height: 4000px;
 	max-width: 1440px;
 }
 .content-header {
@@ -453,10 +499,10 @@ aside {
 	text-decoration: none;
 }
 .post-header .post-author a p {
-	margin-left: 50px;
+	margin-left: 60px;
 }
 .post-header .post-author a p.name {
-	margin-top: 2px;
+	margin-top: 7px;
 	transition: all .2s;
 }
 .post-header .post-author a p.date {
@@ -466,8 +512,8 @@ aside {
 	height: 18px;
 }
 .post-header .post-author-avatar {
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 }
 .post-header .post-author:hover .name {
 	color: #737373;
@@ -475,7 +521,7 @@ aside {
 
 .post-header .post-category {
 	float: right;
-	margin-top: 2px;
+	margin-top: 7px;
 }
 .post-title {
 	margin-top: 30px;
@@ -561,12 +607,18 @@ aside {
 .post-controll .post-like {
 	float: right;
 	margin-right: 25px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 .post-controll .post-view {
 	float: right;
 	margin-right: 0px;
 	margin-top: 15px;
+}
+.post-controll .post-like span.count, .post-controll .post-view span.count {
+	font-size: 16px;
+}
+.post-controll .post-like span.icon, .post-controll .post-view span.icon {
+	margin-bottom: -2px;
 }
 .post-controll .divider {
 	display: inline-block;
@@ -805,7 +857,7 @@ aside {
 	height: auto;
 	/*border: 1px solid #eee;*/
 	border-radius: 4px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .comment-header {
 	height: 40px;
@@ -836,7 +888,10 @@ aside {
 	margin-left: 50px;
 }
 .comment-header .comment-author a p.name {
-	margin-top: 2px;
+	font-size: 16px;
+	line-height: 16px;
+	height: 16px;
+	margin-top: 5px;
 	transition: all .2s;
 }
 .comment-header .comment-author a:hover p.name {
@@ -845,8 +900,9 @@ aside {
 .comment-header .comment-author a p.date {
 	font-size: 14px;
 	font-weight: normal;
+	line-height: 14px;
 	color: #c1c1c1;
-	height: 18px;
+	height: 14px;
 }
 .comment-options {
 	position: absolute;
@@ -906,16 +962,15 @@ aside {
 	height: auto;
 /*	padding-top: 15px;
 	padding-bottom: 10px;*/
-	padding: 15px 20px 10px 50px;
+	padding: 10px 20px 0px 50px;
 }
 .comment-body p {
 	color: #737373;
 	font-size: 16px;
-	line-height: 28px;
+	line-height: 24px;
 }
 .comment-controll {
-	height: 50px;
-	padding-bottom: 10px;
+	height: 43px;
 	border-bottom: 2px solid #eee;
 }
 .comment-controll .comment-reply-wrapper {
@@ -1063,7 +1118,7 @@ aside {
 	.post-controll .post-view {
 		margin-right: 0px;
 		float: right;
-	}
+	} 
 	.post-controll .divider {
 		margin-left: 15px;
 	}
@@ -1075,10 +1130,6 @@ aside {
 	}
 	.post-comments {
 		padding: 0px 15px;
-	}
-	.comment-body {
-		padding-top: 10px;
-		padding-bottom: 0px;
 	}
 }
 @media screen and (max-width: 530px) { 
@@ -1095,6 +1146,9 @@ aside {
 	.post-body h2,
 	.post-body h3 {
 		margin: 15px 0px;
+	}
+	.post-bottom {
+		padding: 20px 15px;
 	}
 	.navigation-left {
 		display: none;

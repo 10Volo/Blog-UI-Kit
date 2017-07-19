@@ -7,8 +7,8 @@ likeButtons.forEach(function(like){
 		like.classList.add('presed');
 		// like.classList.toggle('liked');
 		setTimeout(function(){
-			like.classList.remove('presed');
 			like.classList.toggle('liked');
+			like.classList.remove('presed');
 		}, 300);
 	});
 });
