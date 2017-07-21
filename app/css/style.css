@@ -79,7 +79,7 @@ aside {
 }
 .post-category a {
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #c1c1c1;
 	transition: all .2s; 
@@ -136,10 +136,15 @@ aside {
 }
 .card-top {
 	height: auto;
-	padding: 12px 17px;
+	padding: 12px 20px;
 	padding-bottom: 10px;
 	/*padding-bottom: 0px;*/
 	/*display: none;*/
+}
+.card-divider {
+	height: 1px;
+	background-color: #eee;
+	display: none;
 }
 .card-author {
 	width: auto;
@@ -245,13 +250,14 @@ aside {
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 15px 17px;
-	padding-bottom: 5px;
+	padding: 15px 20px;
+	padding-bottom: 0px;
 	position: relative;
 }
 .card-controll {
 	/*border-top: 1px solid #d6d6d6;*/
-	height: 35px;
+	height: auto;
+	padding-bottom: 3px;
 }
 .card-controll div button {
 	cursor: pointer;
@@ -267,7 +273,7 @@ aside {
 	padding: 10px 0px;
 }
 .card-title h2 {
-	font-size: 24px;
+	font-size: 22px;
 	display: inline-block;
 }
 .card-title h2 a {
@@ -285,13 +291,13 @@ aside {
 	width: 100%;
 }
 .tag {
-	font-size: 14px;
+	font-size: 12px;
 	display: inline-block;
 	min-width: 40px;
 	padding: 0px 7px;
-	height: 22px;
+	height: 20px;
 	text-align: center;
-	line-height: 22px;
+	line-height: 20px;
 	color: grey;
 	font-weight: bold;
 	border-radius: 3px;
@@ -317,7 +323,7 @@ aside {
 
 .post-like, .post-view, .post-comment {
 	display: inline-block;
-	height: 30px;
+	height: 40px;
 	min-width: 40px;
 	width: auto;
 	transition: all .2s;
@@ -328,17 +334,18 @@ aside {
 	font-weight: bold;
 }
 .post-like button.post-like-wrap {
-	margin: 5px 17px;
+	margin: 10px 20px;
+	margin-right: 10px;
 }
 .post-comment {
 	cursor: pointer;
-	height: 30px;
+	height: 40px;
+	width: auto;	
 }
 .post-comment a.post-comment-wrap {
-	margin-left: 15px;
+	margin: 10px 15px;
+	margin-left: 10px;
 	display: inline-block;
-	height: 30px;
-	width: 40px;
 	text-decoration: none;
 	color: #c1c1c1;
 }
@@ -351,7 +358,7 @@ aside {
 }
 .post-like {
 	cursor: pointer;
-	float: right;
+	/*float: right;*/
 }
 .post-like span.like-icon {
 	transition: all .15s ease-in-out;
@@ -371,9 +378,8 @@ aside {
 	background-image: url('../img/like-active.png');
 }
 .post-view {
-	/*float: right;*/
-	margin: 5px 17px;
-	margin-right: 0px;
+	float: right;
+	margin: 10px 20px;
 	height: 17px;
 }
 
@@ -1136,7 +1142,13 @@ aside {
 	.desktop-nav {
 		display: none;
 	}
+	.card-cover {
+		display: none;
 
+	}  
+	.card-divider {
+		display: block;
+	}
 	.post-cover {
 		height: 200px;
 	}
