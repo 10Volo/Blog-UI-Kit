@@ -98,3 +98,27 @@ var commentTextArea = document.querySelector('.post-comments .comment-form form 
 // 	});
 // }
 
+var hiddenMenuButton = document.querySelector('.hidden-nav-button');
+var hiddenMenu = document.querySelector('.hidden-nav-links');
+var dimm = document.querySelector('.dimm');
+var rootBody = document.querySelector('body');
+
+if (hiddenMenuButton && hiddenMenu){
+	hiddenMenuButton.addEventListener('click', function(e){
+		// console.log(hiddenMenuButton, hiddenMenu, rootBody)
+
+		hiddenMenuButton.classList.toggle('open');
+		hiddenMenu.classList.toggle('hidden');
+		rootBody.classList.toggle('scroll-disable');
+		dimm.classList.toggle('dimmed')
+	});
+}
+
+window.addEventListener('resize', function(e){
+	if (window.innerWidth > 780 && dimm.classList.contains('dimmed')){
+		dimm.classList.remove('dimmed');
+		hiddenMenuButton.classList.remove('open');
+		hiddenMenu.classList.remove('hidden');
+	}
+});
+

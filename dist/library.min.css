@@ -13,6 +13,7 @@
 .col-11{width:91.67%}
 .col-12,.dimmed{width:100%}
 .dimmed{background-color:rgba(0,0,0,.7);height:100vh;position:fixed;z-index:5}
+.scroll-disable{overflow:hidden;height:100%}
 .box{box-shadow:0 3px 25px 0 rgba(46,61,73,.2);background-color:#fff}
 .no-select{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
 .icon{display:inline-block;width:16px;height:16px;background-size:cover;background-position:center;margin-bottom:-3px}

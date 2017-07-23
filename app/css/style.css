@@ -222,7 +222,7 @@ aside {
 .card-dropdown.show {
 	visibility: visible;
 	opacity: 1;
-	z-index: 9999;
+	z-index: 4;
 }
 .card-dropdown a {
 	display: block;
@@ -467,8 +467,130 @@ aside {
 
 
 .mobile-nav {
+	position: relative;
 	display: none;
 }
+.hidden-nav {
+	display: inline-block;
+	width: auto;
+}
+.hidden-nav-button {
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	/*background-color: #eee;*/
+/*	background-image: url('../img/list-menu-black.png');
+	background-position: center;
+	background-size: 30px;
+	background-repeat: no-repeat;*/
+}
+.hidden-nav-button-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-top: 13px;
+}
+.hidden-nav-button-wrapper span {
+	display: inline-block;
+	width: 35px;
+	height: 3px;
+	position: absolute;
+	background-color: #737373;
+	border-radius: 4px;
+	opacity: 1;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+.hidden-nav-button-wrapper span:nth-child(1){
+	top: 3px;
+	transform-origin: left center;
+}
+.hidden-nav-button-wrapper span:nth-child(2){
+	top: 16px;
+	transform-origin: left center;
+}
+.hidden-nav-button-wrapper span:nth-child(3){
+	top: 29px;
+	transform-origin: left center;
+}
+/*animation*/
+.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(1){
+	top: 4px;
+	transform: rotate(45deg);
+}
+.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(2){
+	/*top: 16px;*/
+	width: 0%;
+	opacity: 0;
+}
+.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(3){
+	top: 29px;
+	transform: rotate(-45deg);
+}
+.hidden-nav-links {
+	width: 220px;
+	height: 100vh;
+	background-color: white;
+	position: absolute;
+	top: 60px;
+	left: -20px;
+	transform: translateX(-220px);
+	transition: .35s ease-in-out;
+}
+.hidden-nav-links.hidden {
+	transform: translateX(0px);
+	transition: .35s ease-in-out;
+}
+.hidden-nav-links ul  {
+	text-align: center;
+	padding: 20px;
+
+}
+.hidden-nav-links ul li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+.hidden-nav-links ul li a {
+	text-decoration: none;
+	font-size: 26px;
+	color: #9a9a9a;
+}
+.hidden-nav-links ul li a.active {
+	border-bottom: 5px solid #40e0d0;
+	color: #737373;
+}
+
+.mobile-auth-links {
+	display: inline-block;
+	width: auto;
+	float: right;
+}
+.mobile-auth-links li {
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.mobile-auth-links li .button {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+.mobile-auth-links li .main-button {
+	height: 30px;
+	line-height: 26px;
+	padding: 0 10px;
+}
+.mobile-user-links {
+	display: inline-block;
+	width: auto;
+	float: right;
+	display: none;
+}
+
+
+
 
 .main-content {
 	padding-top: 80px;
@@ -848,7 +970,7 @@ aside {
 	opacity: 0;
 	visibility: hidden;
 	border-radius: 4px;
-	z-index: 9999;
+	z-index: 4;
 }
 .comment-controll-dropdown .dropdown-options.show {
 	transition: all .2s ease-in-out;
@@ -968,7 +1090,7 @@ aside {
 .comment-dropdown.show {
 	visibility: visible;
 	opacity: 1;
-	z-index: 9999;
+	z-index: 4;
 }
 .comment-dropdown a {
 	display: block;
@@ -1091,13 +1213,13 @@ aside {
 .register-form-header {
 	height: auto;
 	color: #737373;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 .register-form-header h1 {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .register-form-header ul {
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	/*display: none;*/
 }
 .register-form-header ul li {
@@ -1175,10 +1297,10 @@ aside {
 .login-form-header {
 	height: auto;
 	color: #737373;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 .login-form-header h1 {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .login-form-fields {
 	height: auto;
@@ -1220,7 +1342,7 @@ aside {
 .login-form-errors {
 	color: #ff8b94;
 	padding-bottom: 10px;
-	/*display: none;*/
+	display: none;
 }
 .login-form-errors h2 {
 	margin-bottom: 10px;
@@ -1267,6 +1389,9 @@ aside {
 	}
 	.navigation-top {
 		height: 60px;
+	}
+	.navigation-links {
+		padding: 0px 20px;
 	}
 	.desktop-nav {
 		display: none;
@@ -1325,16 +1450,22 @@ aside {
 	.register-form {
 		width: 100%;
 		margin: 0px auto;
-		padding: 20px 40px;
+		padding: 20px 20px;
 		padding-bottom: 40px;
 		border-radius: 0px;
+	}
+	.register-form-header h1 {
+		font-size: 26px;
 	}
 	.login-form {
 		width: 100%;
 		margin: 0px auto;
-		padding: 20px 40px;
+		padding: 30px 50px;
 		padding-bottom: 40px;
 		border-radius: 0px;
+	}
+	.login-form-header h1 {
+		font-size: 26px;
 	}
 	.register-form.box, .login-form.box {
 		box-shadow: none;
