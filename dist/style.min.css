@@ -39,24 +39,23 @@ aside{width:100%;height:500px}
 .card-dropdown{min-width:80px;height:auto;border-radius:4px;background-color:#fff;position:absolute;top:40px;right:10px;overflow:hidden;visibility:hidden;opacity:0;transition:.2s}
 .card-dropdown.show{visibility:visible;opacity:1;z-index:9999}
 .card-dropdown a{display:block;height:36px;min-width:80px;width:auto;padding:0 15px;color:#a1a1a1;font-weight:700;line-height:36px}
-.card-title h2,.tag{display:inline-block}
+.post-comment,.post-like,.post-view,.tag{min-width:40px;transition:all .2s;display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
 .card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .card-info{height:auto;padding:10px 20px 0;position:relative}
 .card-controll{height:auto;padding-bottom:3px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
 .card-title{padding:10px 0}
-.card-title h2{font-size:22px}
+.card-title h2{font-size:22px;display:inline-block}
 .card-title h2 a{color:#737373;font-weight:700;transition:all .2s}
 .card-title h2 a:hover{color:#41e4de}
 .card-tags{width:100%}
-.tag{font-size:14px;min-width:40px;padding:0 7px;height:22px;line-height:22px;color:#737373;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee;transition:all .2s}
-.desktop-nav .desktop-nav-link,.logo{display:inline-block;line-height:80px}
+.tag{font-size:14px;padding:0 7px;height:22px;line-height:22px;color:#737373;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
 .tag:hover{background-color:#d6d6d6}
 .navigation-top,.post-wrapper{background-color:#fff}
 .tag a{color:inherit}
 .tag a:hover{text-decoration:none}
-.post-comment,.post-like,.post-view{display:inline-block;height:40px;min-width:40px;width:auto;transition:all .2s}
+.post-comment,.post-like,.post-view{height:40px;width:auto}
 .post-comment span.count,.post-like span.count,.post-view span.count{color:#c1c1c1;font-size:14px;font-weight:700}
 .post-like button.post-like-wrap{margin:10px 10px 10px 20px}
 .post-comment{cursor:pointer;height:40px;width:auto}
@@ -72,14 +71,18 @@ aside{width:100%;height:500px}
 .navigation-left,.navigation-top{z-index:9999}
 .navigation-top{height:80px;width:100%;position:fixed}
 .navigation-links{height:80px;width:80%;margin:0 auto;padding:0 20px}
-.logo{height:80px;width:auto;margin-left:10px;font-size:18px}
+.logo{height:80px;width:auto;margin-left:10px;font-size:18px;line-height:80px;display:none}
+.auth-pages-links,.desktop-nav,.desktop-nav ul li,.main-pages-links{display:inline-block}
 .logo a{color:#40e0d0}
-.desktop-nav{display:inline-block;height:80px;width:calc(100% - 153px);float:right;padding:0 20px}
-.desktop-nav ul li{display:inline-block}
-.desktop-nav .desktop-nav-link{font-size:20px;color:#9a9a9a;background-color:#fff;height:80px;padding:0 15px;transition:.2s ease-in-out}
+.desktop-nav{height:80px;width:100%;padding:0 10px}
+.desktop-nav .desktop-nav-link{display:inline-block;font-size:20px;color:#9a9a9a;background-color:#fff;height:80px;line-height:80px;padding:0 15px;transition:.2s ease-in-out}
 .desktop-nav .desktop-nav-link:hover{color:#737373}
 .desktop-nav .desktop-nav-link.active{border-bottom:5px solid #40e0d0;color:#737373}
-.mobile-nav{display:none}
+.main-pages-links{width:auto}
+.auth-pages-links{width:auto;float:right;margin-top:23px}
+.mobile-nav,.user-links{display:none}
+.auth-pages-links li{margin-left:15px}
+.user-links{width:auto;float:right}
 .main-content{padding-top:80px;height:4000px;max-width:1440px}
 .content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%;display:none}
 .content-controll{height:100px;width:100%}
@@ -180,7 +183,7 @@ aside{width:100%;height:500px}
 .forum{margin-left:350px;padding:40px}
 .navigation-left{height:100vh;width:350px;background-color:#fff;top:80px;position:fixed;z-index:0;display:none}
 .topic{height:150px;width:100%;border-radius:4px;border-left:5px solid #ffdc5a}
-.register-form{border-radius:4px;height:auto;width:50%;margin:30px auto;padding:35px 40px 40px}
+.register-form{border-radius:4px;height:auto;width:40%;margin:30px auto;padding:35px 40px 40px}
 .register-form-header{height:auto;color:#737373;padding-bottom:25px}
 .register-form-header h1{margin-bottom:20px}
 .register-form-header ul{padding-bottom:10px}
@@ -189,17 +192,30 @@ aside{width:100%;height:500px}
 .register-form-fields form .button{margin-top:20px}
 .register-form-fields form label{display:inline-block;font-size:18px;color:#737373;cursor:pointer;margin-bottom:5px;line-height:22px}
 .register-form-fields form input{width:100%;height:38px;outline:0;border:2px solid #eee;border-radius:4px;padding:5px 10px;font-size:18px;color:#737373;margin-bottom:15px;transition:all .3s}
+.login-form,.login-form-fields{height:auto}
 .register-form-fields form input:focus{border:2px solid #c1c1c1}
 .register-form-fields form input.error{border:2px solid #ff8b94}
 .register-form-errors{color:#ff8b94;padding-bottom:10px;display:none}
 .register-form-errors h2{margin-bottom:10px}
 .register-form-error{margin-left:20px;margin-bottom:10px;font-size:18px}
-@media screen and (max-width:1200px){.content,section{width:100%}
+.login-form{border-radius:4px;min-width:320px;width:30%;margin:30px auto;padding:25px 30px 30px}
+.login-form-header{height:auto;color:#737373;padding-bottom:25px}
+.login-form-header h1{margin-bottom:20px}
+.login-form-fields form .button{margin-top:20px}
+.login-form-fields form label{display:inline-block;font-size:18px;color:#737373;cursor:pointer;margin-bottom:5px;line-height:22px}
+.login-form-fields form input{width:100%;height:38px;outline:0;border:2px solid #eee;border-radius:4px;padding:5px 10px;font-size:18px;color:#737373;margin-bottom:15px;transition:all .3s}
+.login-form-error,.login-form-errors h2{margin-bottom:10px}
+.login-form-fields form input:focus{border:2px solid #c1c1c1}
+.login-form-fields form input.error{border:2px solid #ff8b94}
+.login-form-errors{color:#ff8b94;padding-bottom:10px}
+.login-form-error{margin-left:20px;font-size:18px}
+@media screen and (max-width:1200px){.content,.navigation-links,section{width:100%}
 }
-@media screen and (max-width:780px){[class*=col-],section{padding:5px}
+@media screen and (max-width:780px){.desktop-nav,.logo{display:none}
+[class*=col-],section{padding:5px}
 .col-3,.col-4,.col-8,.col-9{width:100%}
-.logo{display:none}
 .navigation-top{height:60px}
+.mobile-nav{display:block}
 .main-content{padding-top:60px}
 .divider{width:100px}
 .card-wrap{padding:10px}
@@ -213,9 +229,10 @@ aside{width:100%;height:500px}
 .post-controll .divider{margin-left:15px}
 .post-bottom{padding:30px 15px}
 .post-comments,.post-sidebar{padding:0 15px}
-.register-form{width:100%;margin:0 auto;padding:20px 20px 40px;border-radius:0}
+.login-form,.register-form{width:100%;margin:0 auto;padding:20px 40px 40px;border-radius:0}
+.login-form.box,.register-form.box{box-shadow:none}
 }
-@media screen and (max-width:530px){.card-cover,.desktop-nav{display:none}
+@media screen and (max-width:530px){.card-cover{display:none}
 .card-divider{display:block}
 .post-cover{height:200px}
 .post-header .post-author{height:40px}
@@ -227,5 +244,5 @@ aside{width:100%;height:500px}
 .post-bottom{padding:20px 15px}
 .navigation-left{display:none}
 .forum{margin:0;padding:15px}
-.register-form-fields form .button{margin-top:15px}
+.login-form-fields form .button,.register-form-fields form .button{margin-top:15px;width:50%}
 }
