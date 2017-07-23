@@ -81,7 +81,7 @@ aside {
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: bold;
-	color: #c1c1c1;
+	color: #a1a1a1;
 	transition: all .2s; 
 }
 .post-category a:hover {
@@ -183,7 +183,7 @@ aside {
 	font-size: 13px;
 	line-height: 13px;
 	font-weight: normal;
-	color: #c1c1c1;
+	color: #a1a1a1;
 	height: 13px;
 }
 .card-options {
@@ -250,7 +250,7 @@ aside {
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 15px 20px;
+	padding: 10px 20px;
 	padding-bottom: 0px;
 	position: relative;
 }
@@ -277,8 +277,8 @@ aside {
 	display: inline-block;
 }
 .card-title h2 a {
-	/*color: #707070;*/
-	color: grey;
+	color: #737373;
+	/*color: grey;*/
 	font-weight: bold;
 	text-decoration: none;
 	transition: all .2s;
@@ -291,14 +291,14 @@ aside {
 	width: 100%;
 }
 .tag {
-	font-size: 12px;
+	font-size: 14px;
 	display: inline-block;
 	min-width: 40px;
 	padding: 0px 7px;
-	height: 20px;
+	height: 22px;
 	text-align: center;
-	line-height: 20px;
-	color: grey;
+	line-height: 22px;
+	color: #737373;
 	font-weight: bold;
 	border-radius: 3px;
 	margin: 3px 3px 3px 0px;
@@ -1082,7 +1082,7 @@ aside {
 	margin-left: 20px;
 	margin-bottom: 10px;
 	font-size: 18px;
-	color: #c1c1c1;
+	color: #a1a1a1;
 }
 .register-form-fields {
 	height: auto;
@@ -1099,6 +1099,7 @@ aside {
 	color: #737373;
 	cursor: pointer;
 	margin-bottom: 5px;
+	line-height: 22px;
 }
 .register-form-fields form input {
 	width: 100%;

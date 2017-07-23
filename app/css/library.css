@@ -73,7 +73,24 @@
 	background-image: url('../img/tag (1).png');
 	display: none;
 }
-
+.user-icon {
+	background-image: url('../img/man-user.png');
+}
+.lock-icon {
+	background-image: url('../img/lock.png');
+	margin-right: 5px;
+}
+.notification-icon {
+	background-image: url('../img/notifications-button.png');
+}
+.address-icon {
+	background-image: url('../img/mail-black-envelope-symbol.png');
+	margin-right: 8px;
+}
+.big-icon {
+	width: 20px;
+	height: 20px;
+}
 
 /*****
 

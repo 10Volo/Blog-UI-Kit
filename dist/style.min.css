@@ -16,7 +16,7 @@ aside{width:100%;height:500px}
 .post-author a:hover .post-author-name{color:#737373}
 .post-author-name{height:30px;line-height:30px;margin-left:40px;transition:all .2s}
 .post-author-avatar{height:30px;width:30px;border-radius:50%;position:absolute}
-.post-category a{font-size:14px;font-weight:700;color:#c1c1c1;transition:all .2s}
+.post-category a{font-size:14px;font-weight:700;color:#a1a1a1;transition:all .2s}
 .post-category a:hover{color:#9a9a9a}
 .post-date{color:#c1c1c1;font-size:14px;margin-top:3px;display:none}
 .circle,.post-date p{display:inline-block}
@@ -32,7 +32,7 @@ aside{width:100%;height:500px}
 .card-author a p{margin-left:40px}
 .card-author a p.name{font-size:14px;margin-top:1px;height:15px;line-height:14px;transition:all .2s}
 .card-author a:hover p.name{color:#737373}
-.card-author a p.date{font-size:13px;line-height:13px;font-weight:400;color:#c1c1c1;height:13px}
+.card-author a p.date{font-size:13px;line-height:13px;font-weight:400;color:#a1a1a1;height:13px}
 .card-options{position:absolute;right:0;top:0;cursor:pointer;width:50px;height:53px;line-height:50px}
 .card-options span.options-icon{opacity:.25;transition:.2s}
 .card-options:hover span.options-icon{opacity:.6}
@@ -42,15 +42,15 @@ aside{width:100%;height:500px}
 .card-title h2,.tag{display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
 .card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
-.card-info{height:auto;padding:15px 20px 0;position:relative}
+.card-info{height:auto;padding:10px 20px 0;position:relative}
 .card-controll{height:auto;padding-bottom:3px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
 .card-title{padding:10px 0}
 .card-title h2{font-size:22px}
-.card-title h2 a{color:grey;font-weight:700;transition:all .2s}
+.card-title h2 a{color:#737373;font-weight:700;transition:all .2s}
 .card-title h2 a:hover{color:#41e4de}
 .card-tags{width:100%}
-.tag{font-size:12px;min-width:40px;padding:0 7px;height:20px;line-height:20px;color:grey;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee;transition:all .2s}
+.tag{font-size:14px;min-width:40px;padding:0 7px;height:22px;line-height:22px;color:#737373;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee;transition:all .2s}
 .desktop-nav .desktop-nav-link,.logo{display:inline-block;line-height:80px}
 .tag:hover{background-color:#d6d6d6}
 .navigation-top,.post-wrapper{background-color:#fff}
@@ -184,10 +184,10 @@ aside{width:100%;height:500px}
 .register-form-header{height:auto;color:#737373;padding-bottom:25px}
 .register-form-header h1{margin-bottom:20px}
 .register-form-header ul{padding-bottom:10px}
-.register-form-header ul li{margin-left:20px;margin-bottom:10px;font-size:18px;color:#c1c1c1}
+.register-form-header ul li{margin-left:20px;margin-bottom:10px;font-size:18px;color:#a1a1a1}
 .register-form-fields{height:auto}
 .register-form-fields form .button{margin-top:20px}
-.register-form-fields form label{display:inline-block;font-size:18px;color:#737373;cursor:pointer;margin-bottom:5px}
+.register-form-fields form label{display:inline-block;font-size:18px;color:#737373;cursor:pointer;margin-bottom:5px;line-height:22px}
 .register-form-fields form input{width:100%;height:38px;outline:0;border:2px solid #eee;border-radius:4px;padding:5px 10px;font-size:18px;color:#737373;margin-bottom:15px;transition:all .3s}
 .register-form-fields form input:focus{border:2px solid #c1c1c1}
 .register-form-fields form input.error{border:2px solid #ff8b94}
