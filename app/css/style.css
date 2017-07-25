@@ -85,7 +85,7 @@ aside {
 	transition: all .2s; 
 }
 .post-category a:hover {
-	color: #9a9a9a;
+	color: #737373;
 }
 .post-date {
 	display: inline-block;
@@ -106,6 +106,7 @@ aside {
 	display: inline-block;
 	border-radius: 50%;
 	margin-right: 2px;
+	/*display: none;*/
 }
 
 /**************************************************/
@@ -145,6 +146,7 @@ aside {
 	height: 1px;
 	background-color: #eee;
 	display: none;
+	/*margin: 0px 20px;*/
 }
 .card-author {
 	width: auto;
@@ -270,7 +272,8 @@ aside {
 	border-radius: 0px;
 }
 .card-title {
-	padding: 10px 0px;
+	padding: 5px 0px;
+	padding-bottom: 10px;
 }
 .card-title h2 {
 	font-size: 22px;
@@ -291,13 +294,13 @@ aside {
 	width: 100%;
 }
 .tag {
-	font-size: 14px;
+	font-size: 12px;
 	display: inline-block;
 	min-width: 40px;
 	padding: 0px 7px;
-	height: 22px;
+	height: 20px;
 	text-align: center;
-	line-height: 22px;
+	line-height: 20px;
 	color: #737373;
 	font-weight: bold;
 	border-radius: 3px;
@@ -493,8 +496,8 @@ aside {
 }
 .hidden-nav-button-wrapper span {
 	display: inline-block;
-	width: 35px;
-	height: 3px;
+	width: 30px;
+	height: 2px;
 	position: absolute;
 	background-color: #737373;
 	border-radius: 4px;
@@ -503,7 +506,7 @@ aside {
 	transition: .25s ease-in-out;
 }
 .hidden-nav-button-wrapper span:nth-child(1){
-	top: 3px;
+	top: 6px;
 	transform-origin: left center;
 }
 .hidden-nav-button-wrapper span:nth-child(2){
@@ -511,12 +514,12 @@ aside {
 	transform-origin: left center;
 }
 .hidden-nav-button-wrapper span:nth-child(3){
-	top: 29px;
+	top: 26px;
 	transform-origin: left center;
 }
 /*animation*/
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(1){
-	top: 4px;
+	top: 7px;
 	transform: rotate(45deg);
 }
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(2){
@@ -525,7 +528,7 @@ aside {
 	opacity: 0;
 }
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(3){
-	top: 29px;
+	top: 28px;
 	transform: rotate(-45deg);
 }
 .hidden-nav-links {
@@ -572,15 +575,16 @@ aside {
 	margin-top: 15px;
 	margin-left: 10px;
 }
-.mobile-auth-links li .button {
+.mobile-auth-links li a {
+	display: inline-block;
+	text-decoration: none;
 	height: 30px;
 	line-height: 30px;
-	padding: 0 10px;
+	font-weight: bold;
+	color: #a1a1a1;
 }
-.mobile-auth-links li .main-button {
-	height: 30px;
-	line-height: 26px;
-	padding: 0 10px;
+.mobile-auth-links li a.register-link {
+	color: #41e4de;
 }
 .mobile-user-links {
 	display: inline-block;

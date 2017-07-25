@@ -1,6 +1,6 @@
 .post-author,.post-author a,.post-author-name,.post-category{display:inline-block}
 .card-author-avatar,.page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg)}
-.card-author a,.card-dropdown a,.card-title h2 a,.desktop-nav .desktop-nav-link,.hidden-nav-links ul li a,.logo a,.post-body a,.post-category a,.post-comment a.post-comment-wrap,.post-header .post-author a,.tag a{text-decoration:none}
+.card-author a,.card-dropdown a,.card-title h2 a,.desktop-nav .desktop-nav-link,.hidden-nav-links ul li a,.logo a,.mobile-auth-links li a,.post-body a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
 .card-author-avatar,.card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-size:cover;background-position:center}
 .card-author-avatar,.card-cover,.comment-author-avatar,.comment-controll-dropdown .dropdown-arrow,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-position:center}
 .card-options,.comment-options,.tag{text-align:center;user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
@@ -17,7 +17,7 @@ aside{width:100%;height:500px}
 .post-author-name{height:30px;line-height:30px;margin-left:40px;transition:all .2s}
 .post-author-avatar{height:30px;width:30px;border-radius:50%;position:absolute}
 .post-category a{font-size:14px;font-weight:700;color:#a1a1a1;transition:all .2s}
-.post-category a:hover{color:#9a9a9a}
+.post-category a:hover{color:#737373}
 .post-date{color:#c1c1c1;font-size:14px;margin-top:3px;display:none}
 .circle,.post-date p{display:inline-block}
 .circle{background-color:#ffdc5a;height:10px;width:10px;border-radius:50%;margin-right:2px}
@@ -45,20 +45,19 @@ aside{width:100%;height:500px}
 .card-info{height:auto;padding:10px 20px 0;position:relative}
 .card-controll{height:auto;padding-bottom:3px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
-.card-title{padding:10px 0}
+.card-title{padding:5px 0 10px}
 .card-title h2{font-size:22px;display:inline-block}
 .card-title h2 a{color:#737373;font-weight:700;transition:all .2s}
 .card-title h2 a:hover{color:#41e4de}
 .card-tags{width:100%}
-.tag{font-size:14px;padding:0 7px;height:22px;line-height:22px;color:#737373;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
+.tag{font-size:12px;padding:0 7px;height:20px;line-height:20px;color:#737373;font-weight:700;border-radius:3px;margin:3px 3px 3px 0;background-color:#eee}
 .tag:hover{background-color:#d6d6d6}
 .tag a{color:inherit}
-.tag a:hover{text-decoration:none}
 .post-comment,.post-like,.post-view{height:40px;width:auto}
 .post-comment span.count,.post-like span.count,.post-view span.count{color:#c1c1c1;font-size:14px;font-weight:700}
 .post-like button.post-like-wrap{margin:10px 10px 10px 20px}
 .post-comment{cursor:pointer;height:40px;width:auto}
-.post-comment a.post-comment-wrap{margin:10px 15px 10px 10px;display:inline-block;color:#c1c1c1}
+.post-comment a.post-comment-wrap{margin:10px 15px 10px 10px;display:inline-block;text-decoration:none;color:#c1c1c1}
 .post-comment span.comment-icon{opacity:.25;transition:.2s}
 .post-like span.like-icon,.post-like.liked span.like-icon,.post-like:hover span.like-icon{transition:all .15s ease-in-out}
 .post-comment:hover span.comment-icon{opacity:.6}
@@ -85,14 +84,14 @@ aside{width:100%;height:500px}
 .hidden-nav{display:inline-block;width:auto}
 .hidden-nav-button{height:60px;width:60px;cursor:pointer}
 .hidden-nav-button-wrapper{position:relative;display:inline-block;width:35px;height:35px;margin-top:13px}
-.hidden-nav-button-wrapper span{display:inline-block;width:35px;height:3px;position:absolute;background-color:#737373;border-radius:4px;opacity:1;transform:rotate(0);transition:.25s ease-in-out}
+.hidden-nav-button-wrapper span{display:inline-block;width:30px;height:2px;position:absolute;background-color:#737373;border-radius:4px;opacity:1;transform:rotate(0);transition:.25s ease-in-out}
 .hidden-nav-links,.post-wrapper{background-color:#fff}
-.hidden-nav-button-wrapper span:nth-child(1){top:3px;transform-origin:left center}
+.hidden-nav-button-wrapper span:nth-child(1){top:6px;transform-origin:left center}
 .hidden-nav-button-wrapper span:nth-child(2){top:16px;transform-origin:left center}
-.hidden-nav-button-wrapper span:nth-child(3){top:29px;transform-origin:left center}
-.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(1){top:4px;transform:rotate(45deg)}
+.hidden-nav-button-wrapper span:nth-child(3){top:26px;transform-origin:left center}
+.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(1){top:7px;transform:rotate(45deg)}
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(2){width:0;opacity:0}
-.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(3){top:29px;transform:rotate(-45deg)}
+.hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(3){top:28px;transform:rotate(-45deg)}
 .hidden-nav-links{width:220px;height:100vh;position:absolute;top:60px;left:-20px;transform:translateX(-220px);transition:.35s ease-in-out}
 .hidden-nav-links.hidden{transform:translateX(0);transition:.35s ease-in-out}
 .hidden-nav-links ul{text-align:center;padding:20px}
@@ -101,8 +100,8 @@ aside{width:100%;height:500px}
 .hidden-nav-links ul li a.active{border-bottom:5px solid #40e0d0;color:#737373}
 .mobile-auth-links{display:inline-block;width:auto;float:right}
 .mobile-auth-links li{list-style-type:none;display:inline-block;margin-top:15px;margin-left:10px}
-.mobile-auth-links li .button{height:30px;line-height:30px;padding:0 10px}
-.mobile-auth-links li .main-button{height:30px;line-height:26px;padding:0 10px}
+.mobile-auth-links li a{display:inline-block;height:30px;line-height:30px;font-weight:700;color:#a1a1a1}
+.mobile-auth-links li a.register-link{color:#41e4de}
 .mobile-user-links{width:auto;float:right;display:none}
 .main-content{padding-top:80px;height:4000px;max-width:1440px}
 .content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%;display:none}
