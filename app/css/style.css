@@ -562,7 +562,7 @@ aside {
 	color: #9a9a9a;
 }
 .hidden-nav-links ul li a.active {
-	border-bottom: 5px solid #40e0d0;
+	border-bottom: 3px solid #40e0d0;
 	color: #737373;
 }
 
@@ -610,7 +610,7 @@ aside {
 	background-image: url(../img/gradient-sea.jpg);
 	height: 400px;
 	width: 100%;
-	display: none;
+	/*display: none;*/
 } 
 .content-controll {
 	height: 100px;

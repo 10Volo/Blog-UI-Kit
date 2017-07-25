@@ -97,14 +97,14 @@ aside{width:100%;height:500px}
 .hidden-nav-links ul{text-align:center;padding:20px}
 .hidden-nav-links ul li{list-style-type:none;margin-bottom:20px}
 .hidden-nav-links ul li a{font-size:26px;color:#9a9a9a}
-.hidden-nav-links ul li a.active{border-bottom:5px solid #40e0d0;color:#737373}
+.hidden-nav-links ul li a.active{border-bottom:3px solid #40e0d0;color:#737373}
 .mobile-auth-links{display:inline-block;width:auto;float:right}
 .mobile-auth-links li{list-style-type:none;display:inline-block;margin-top:15px;margin-left:10px}
 .mobile-auth-links li a{display:inline-block;height:30px;line-height:30px;font-weight:700;color:#a1a1a1}
 .mobile-auth-links li a.register-link{color:#41e4de}
 .mobile-user-links{width:auto;float:right;display:none}
 .main-content{padding-top:80px;height:4000px;max-width:1440px}
-.content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%;display:none}
+.content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%}
 .content-controll{height:100px;width:100%}
 .content{width:80%;margin:0 auto;z-index:0;height:auto}
 .post-cover{width:100%;height:350px;background-image:url(../img/wallpaper-1bae1.jpg)}
