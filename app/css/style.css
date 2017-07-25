@@ -610,7 +610,7 @@ aside {
 	background-image: url(../img/gradient-sea.jpg);
 	height: 400px;
 	width: 100%;
-	/*display: none;*/
+	display: none;
 } 
 .content-controll {
 	height: 100px;
