@@ -137,8 +137,8 @@ aside {
 }
 .card-top {
 	height: auto;
-	padding: 12px 20px;
-	padding-bottom: 10px;
+	padding: 15px 20px;
+	padding-bottom: 13px;
 	/*padding-bottom: 0px;*/
 	/*display: none;*/
 }
@@ -194,7 +194,7 @@ aside {
 	top: 0px;
 	cursor: pointer;
 	width: 50px;
-	height: 53px;
+	height: 59px;
 	display: inline-block;
 	text-align: center;
 	line-height: 50px;
@@ -214,7 +214,7 @@ aside {
 	border-radius: 4px;
 	background-color: white;
 	position: absolute;
-	top: 40px;
+	top: 50px;
 	right: 10px;
 	overflow: hidden;
 	visibility: hidden;
@@ -246,13 +246,14 @@ aside {
 	background-position: center;
 	background-size: cover;
 	background-image: url(../img/wallpaper-1bae1.jpg);
+	/*background-image: url(../img/shameless7.jpg);*/
 	/*display: none;*/
 	/*margin: 0px 20px;*/
 }
 .card-info {
 	/*min-height: 145px;*/
 	height: auto;
-	padding: 10px 20px;
+	padding: 12px 20px;
 	padding-bottom: 0px;
 	position: relative;
 }
@@ -273,7 +274,7 @@ aside {
 }
 .card-title {
 	padding: 5px 0px;
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 }
 .card-title h2 {
 	font-size: 22px;
@@ -292,6 +293,7 @@ aside {
 }
 .card-tags {
 	width: 100%;
+	/*display: none;*/
 }
 .tag {
 	font-size: 12px;
