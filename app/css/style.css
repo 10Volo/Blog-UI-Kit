@@ -459,6 +459,7 @@ aside {
 	width: auto;
 	float: right;
 	margin-top: 23px;
+	display: none;
 }
 .auth-pages-links li {
 	margin-left: 15px;
@@ -467,8 +468,132 @@ aside {
 	display: inline-block;
 	width: auto;
 	float: right;
-	display: none;
+	/*display: none;*/
 }
+.notifications-wrapper {	
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+	height: 40px;
+	width: auto;
+	position: relative;
+	cursor: pointer;
+}
+.notifications-button {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	/*background-color: #eee;*/
+	background-position: center;
+	background-size: 30px;
+	background-image: url(../img/notifications-button.png);
+	background-repeat: no-repeat;
+	opacity: .25;
+	transition: all .2s; 
+}
+.notifications-button:hover {
+	opacity: .4;
+}
+.notifications-count {
+	display: inline-block;
+	height: 20px;
+	min-width: 20px;
+	width: auto;
+	background-color: #ff8b94;
+	position: absolute;
+	padding: 0px 5px;
+	border-radius: 20px;
+	color: #fff;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	top: 10px;
+	right: 35px;
+	/*display: none;*/
+}
+.notifications {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	width: 250px;
+	min-height: 60px;
+	border-radius: 4px;
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s ease-in-out;
+}
+.notifications.show {
+	opacity: 1;
+	visibility: visible;
+}
+.notifications p {
+	padding: 10px 0px;
+	color: #9a9a9a;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	font-weight: bold;
+}
+.notifications ul li {
+	width: 100%;
+}
+.notification {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	color: #9a9a9a;
+	text-decoration: none;
+	height: auto;
+	transition: .2s;
+}
+.notification:hover {
+	background-color: #eee;
+}
+.notifications .notifications-all {
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0px;
+	text-decoration: none;
+	color: #41ede1;
+	text-align: center;
+	font-weight: bold;
+}
+
+.profile-button {
+	height: 40px;
+	width: auto;
+	display: inline-block;
+}
+.profile-button-avatar {
+	margin-top: 5px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #eee;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	background-image: url(../img/gradient-sea.jpg);
+	background-repeat: no-repeat;
+	float: right;
+}
+.profile-button-name {
+	padding-right: 10px;
+	height: 40px;
+	width: auto;
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+	color: #9a9a9a;
+	font-weight: bold;
+	transition: .2s;
+	/*display: none;*/
+}
+.profile-button:hover .profile-button-name {
+	color: #737373;
+}
+
 
 
 .mobile-nav {
@@ -501,7 +626,7 @@ aside {
 	width: 30px;
 	height: 2px;
 	position: absolute;
-	background-color: #737373;
+	background-color: #9a9a9a;
 	border-radius: 4px;
 	opacity: 1;
 	transform: rotate(0deg);
@@ -542,6 +667,7 @@ aside {
 	left: -20px;
 	transform: translateX(-220px);
 	transition: .35s ease-in-out;
+	/*background-color: #fafafa;*/
 }
 .hidden-nav-links.hidden {
 	transform: translateX(0px);
@@ -570,6 +696,7 @@ aside {
 	display: inline-block;
 	width: auto;
 	float: right;
+	display: none;
 }
 .mobile-auth-links li {
 	list-style-type: none;
@@ -592,30 +719,129 @@ aside {
 	display: inline-block;
 	width: auto;
 	float: right;
-	display: none;
+	margin-top: 5px;
+	/*display: none;*/
 }
+.mobile-user-links li {
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.mobile-user-links li a {
+	list-style-type: none;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+}
+.mobile-notifications {
+	position: relative;
+}
+.mobile-notifications-button {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-position: center;
+	background-size: 30px;
+	background-image: url(../img/notifications-button.png);
+	background-repeat: no-repeat;
+	opacity: .25;
+	transition: all .2s; 
+}
+.mobile-notifications-button:hover {
+	opacity: .4;
+}
+.mobile-notifications-count {
+	display: inline-block;
+	height: 20px;
+	min-width: 20px;
+	width: auto;
+	background-color: #ff8b94;
+	position: absolute;
+	padding: 0px 5px;
+	border-radius: 20px;
+	color: #fff;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	top: 10px;
+	right: 35px;
+	/*display: none;*/
+}
+.mobile-profile-button {
+	margin-top: 5px;
+	margin-right: 5px;
+	float: right;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #eee;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	background-image: url(../img/gradient-sea.jpg);
+	background-repeat: no-repeat;
+}
+
 
 
 
 
 .main-content {
 	padding-top: 80px;
-	/*background-color: #f1f1f1;*/
+	background-color: #fafafa;
 	height: 4000px;
 	max-width: 1440px;
 }
-.content-header {
-	background-position: center;
-	background-size: cover;
-	background-image: url(../img/gradient-sea.jpg);
-	height: 400px;
-	width: 100%;
-	display: none;
-} 
+.content-info {
+	height: 50px;
+}
 .content-controll {
-	height: 100px;
+	height: auto;
 	width: 100%;
+	padding: 20px 35px;
+	background-color: #fff;
+	/*line-height: 80px;*/
+	margin-bottom: 15px;
 } 
+.main-articles-filter {
+	display: inline-block;
+	position: relative;
+	width: auto;
+}
+.main-articles-selected {
+	font-size: 20px;
+	font-weight: bold;
+	color: #9a9a9a;
+	display: inline-block;
+}
+.main-articles-arrow {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	float: right;
+	border-radius: 50%;
+	background-position: center;
+	background-size: 16px;
+	background-image: url('../img/right-arrow.png');
+	background-repeat: no-repeat;
+	transition: all .2s ease-in-out;
+	transform: rotate(0deg);
+}
+.main-articles-arrow.rotated {
+	transform: rotate(90deg);
+	transition: all .2s ease-in-out;
+}
+.main-articles-options {
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+.main-articles-option {
+	height: 38px;
+	line-height: 38px;
+}
 .content {
 	/*border: 1px solid grey;*/
 	width: 80%;
@@ -1407,6 +1633,9 @@ aside {
 	}
 	.main-content {
 		padding-top: 60px;
+	}
+	.content-controll {
+		padding: 15px 20px;
 	}
 	.divider {
 		width: 100px;

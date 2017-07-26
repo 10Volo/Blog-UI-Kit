@@ -1,9 +1,9 @@
 .post-author,.post-author a,.post-author-name,.post-category{display:inline-block}
-.card-author-avatar,.page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg)}
-.card-author a,.card-dropdown a,.card-title h2 a,.desktop-nav .desktop-nav-link,.hidden-nav-links ul li a,.logo a,.mobile-auth-links li a,.post-body a,.post-category a,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
-.card-author-avatar,.card-cover,.content-header,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-size:cover;background-position:center}
-.card-author-avatar,.card-cover,.comment-author-avatar,.comment-controll-dropdown .dropdown-arrow,.page-top,.post-author-avatar,.post-author-info .avatar,.post-cover,.related-post-cover{background-position:center}
+.card-author-avatar,.page-top,.post-author-avatar{background-image:url(../img/gradient-sea.jpg);background-size:cover}
+.card-author-avatar,.card-cover,.mobile-profile-button,.page-top,.post-author-avatar{background-size:cover}
+.card-author a,.card-dropdown a,.card-title h2 a,.desktop-nav .desktop-nav-link,.hidden-nav-links ul li a,.mobile-auth-links li a,.notification,.notifications .notifications-all,.post-body a,.post-category a,.post-comment a.post-comment-wrap,.post-header .post-author a,.tag a,.tag a:hover{text-decoration:none}
 .card-options,.comment-options,.tag{text-align:center;user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}
+.mobile-notifications-button,.notifications-button,.profile-button-avatar{background-position:center;background-repeat:no-repeat}
 *{box-sizing:border-box;padding:0;margin:0}
 .card-wrap,section{padding:20px}
 body{font-family:Roboto,sans-serif}
@@ -15,20 +15,20 @@ aside{width:100%;height:500px}
 .post-author a{font-weight:700;color:#9a9a9a}
 .post-author a:hover .post-author-name{color:#737373}
 .post-author-name{height:30px;line-height:30px;margin-left:40px;transition:all .2s}
-.post-author-avatar{height:30px;width:30px;border-radius:50%;position:absolute}
+.post-author-avatar{height:30px;width:30px;background-position:center;border-radius:50%;position:absolute}
 .post-category a{font-size:14px;font-weight:700;color:#a1a1a1;transition:all .2s}
 .post-category a:hover{color:#737373}
 .post-date{color:#c1c1c1;font-size:14px;margin-top:3px;display:none}
 .circle,.post-date p{display:inline-block}
 .circle{background-color:#ffdc5a;height:10px;width:10px;border-radius:50%;margin-right:2px}
-.page-top{height:200px;margin-bottom:50px}
+.page-top{background-position:center;height:200px;margin-bottom:50px}
 .card{height:auto;width:100%;border-radius:4px;position:relative}
 .card-top{height:auto;padding:15px 20px 13px}
 .card-divider{height:1px;background-color:#eee;display:none}
 .card-author,.card-author a,.card-options{display:inline-block}
 .card-author{width:auto}
 .card-author a{font-weight:700;color:#9a9a9a}
-.card-author-avatar{height:30px;width:30px;border-radius:50%;position:absolute}
+.card-author-avatar{height:30px;width:30px;background-position:center;border-radius:50%;position:absolute}
 .card-author a p{margin-left:40px}
 .card-author a p.name{font-size:14px;margin-top:1px;height:15px;line-height:14px;transition:all .2s}
 .card-author a:hover p.name{color:#737373}
@@ -41,7 +41,7 @@ aside{width:100%;height:500px}
 .card-dropdown a{display:block;height:36px;min-width:80px;width:auto;padding:0 15px;color:#a1a1a1;font-weight:700;line-height:36px}
 .post-comment,.post-like,.post-view,.tag{min-width:40px;transition:all .2s;display:inline-block}
 .card-dropdown a:hover{background-color:#f1f1f1}
-.card-cover{height:170px;background-image:url(../img/wallpaper-1bae1.jpg)}
+.card-cover{height:170px;background-position:center;background-image:url(../img/wallpaper-1bae1.jpg)}
 .card-info{height:auto;padding:12px 20px 0;position:relative}
 .card-controll{height:auto;padding-bottom:3px}
 .card-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
@@ -57,7 +57,7 @@ aside{width:100%;height:500px}
 .post-comment span.count,.post-like span.count,.post-view span.count{color:#c1c1c1;font-size:14px;font-weight:700}
 .post-like button.post-like-wrap{margin:10px 10px 10px 20px}
 .post-comment{cursor:pointer;height:40px;width:auto}
-.post-comment a.post-comment-wrap{margin:10px 15px 10px 10px;display:inline-block;text-decoration:none;color:#c1c1c1}
+.post-comment a.post-comment-wrap{margin:10px 15px 10px 10px;display:inline-block;color:#c1c1c1}
 .post-comment span.comment-icon{opacity:.25;transition:.2s}
 .post-like span.like-icon,.post-like.liked span.like-icon,.post-like:hover span.like-icon{transition:all .15s ease-in-out}
 .post-comment:hover span.comment-icon{opacity:.6}
@@ -70,42 +70,73 @@ aside{width:100%;height:500px}
 .navigation-top{height:80px;width:100%;background-color:#fff;position:fixed}
 .navigation-links{height:80px;width:80%;margin:0 auto;padding:0 20px}
 .logo{height:80px;width:auto;margin-left:10px;font-size:18px;line-height:80px;display:none}
-.auth-pages-links,.desktop-nav,.desktop-nav ul li,.main-pages-links{display:inline-block}
-.logo a{color:#40e0d0}
+.desktop-nav,.desktop-nav ul li,.main-pages-links{display:inline-block}
+.logo a{color:#40e0d0;text-decoration:none}
 .desktop-nav{height:80px;width:100%;padding:0 10px}
 .desktop-nav .desktop-nav-link{display:inline-block;font-size:20px;color:#9a9a9a;background-color:#fff;height:80px;line-height:80px;padding:0 15px;transition:.2s ease-in-out}
 .desktop-nav .desktop-nav-link:hover{color:#737373}
 .desktop-nav .desktop-nav-link.active{border-bottom:5px solid #40e0d0;color:#737373}
 .main-pages-links{width:auto}
-.auth-pages-links{width:auto;float:right;margin-top:23px}
+.auth-pages-links{width:auto;float:right;margin-top:23px;display:none}
 .auth-pages-links li{margin-left:15px}
-.user-links{width:auto;float:right;display:none}
+.user-links{display:inline-block;width:auto;float:right}
+.notifications-wrapper{display:inline-block;margin-top:20px;margin-right:10px;height:40px;width:auto;position:relative;cursor:pointer}
+.notifications-button{display:inline-block;height:40px;width:40px;background-size:30px;background-image:url(../img/notifications-button.png);opacity:.25;transition:all .2s}
+.notifications-button:hover{opacity:.4}
+.notifications-count{display:inline-block;height:20px;min-width:20px;width:auto;background-color:#ff8b94;position:absolute;padding:0 5px;border-radius:20px;color:#fff;line-height:20px;font-size:12px;font-weight:700;text-align:center;top:10px;right:35px}
+.notifications{position:absolute;top:50px;right:0;width:250px;min-height:60px;border-radius:4px;visibility:hidden;opacity:0;transition:.2s ease-in-out}
+.notification,.profile-button-name{display:inline-block;transition:.2s}
+.notifications.show{opacity:1;visibility:visible}
+.notifications p{padding:10px 0;color:#9a9a9a;border-bottom:1px solid #eee;text-align:center;font-weight:700}
+.notifications ul li{width:100%}
+.notification{width:100%;padding:10px 20px;color:#9a9a9a;height:auto}
+.notification:hover{background-color:#eee}
+.notifications .notifications-all{display:inline-block;width:100%;margin-top:10px;padding:10px 0;color:#41ede1;text-align:center;font-weight:700}
+.profile-button{height:40px;width:auto;display:inline-block}
+.profile-button-avatar{margin-top:5px;display:inline-block;width:30px;height:30px;background-color:#eee;background-size:cover;border-radius:50%;background-image:url(../img/gradient-sea.jpg);float:right}
+.profile-button-name{padding-right:10px;height:40px;width:auto;float:right;line-height:40px;color:#9a9a9a;font-weight:700}
+.profile-button:hover .profile-button-name{color:#737373}
 .mobile-nav{position:relative;display:none}
 .hidden-nav{display:inline-block;width:auto}
 .hidden-nav-button{height:60px;width:60px;cursor:pointer}
 .hidden-nav-button-wrapper{position:relative;display:inline-block;width:35px;height:35px;margin-top:13px}
-.hidden-nav-button-wrapper span{display:inline-block;width:30px;height:2px;position:absolute;background-color:#737373;border-radius:4px;opacity:1;transform:rotate(0);transition:.25s ease-in-out}
-.hidden-nav-links,.post-wrapper{background-color:#fff}
+.hidden-nav-button-wrapper span{display:inline-block;width:30px;height:2px;position:absolute;background-color:#9a9a9a;border-radius:4px;opacity:1;transform:rotate(0);transition:.25s ease-in-out}
 .hidden-nav-button-wrapper span:nth-child(1){top:6px;transform-origin:left center}
 .hidden-nav-button-wrapper span:nth-child(2){top:16px;transform-origin:left center}
 .hidden-nav-button-wrapper span:nth-child(3){top:26px;transform-origin:left center}
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(1){top:7px;transform:rotate(45deg)}
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(2){width:0;opacity:0}
 .hidden-nav-button.open .hidden-nav-button-wrapper span:nth-child(3){top:28px;transform:rotate(-45deg)}
-.hidden-nav-links{width:220px;height:100vh;position:absolute;top:60px;left:-20px;transform:translateX(-220px);transition:.35s ease-in-out}
+.hidden-nav-links{width:220px;height:100vh;background-color:#fff;position:absolute;top:60px;left:-20px;transform:translateX(-220px);transition:.35s ease-in-out}
 .hidden-nav-links.hidden{transform:translateX(0);transition:.35s ease-in-out}
 .hidden-nav-links ul{text-align:center;padding:20px}
 .hidden-nav-links ul li{list-style-type:none;margin-bottom:20px}
 .hidden-nav-links ul li a{font-size:26px;color:#9a9a9a}
 .hidden-nav-links ul li a.active{border-bottom:3px solid #40e0d0;color:#737373}
-.mobile-auth-links{display:inline-block;width:auto;float:right}
+.mobile-auth-links{width:auto;float:right;display:none}
 .mobile-auth-links li{list-style-type:none;display:inline-block;margin-top:15px;margin-left:10px}
 .mobile-auth-links li a{display:inline-block;height:30px;line-height:30px;font-weight:700;color:#a1a1a1}
 .mobile-auth-links li a.register-link{color:#41e4de}
-.mobile-user-links{width:auto;float:right;display:none}
-.main-content{padding-top:80px;height:4000px;max-width:1440px}
-.content-header{background-image:url(../img/gradient-sea.jpg);height:400px;width:100%}
-.content-controll{height:100px;width:100%}
+.mobile-user-links{display:inline-block;width:auto;float:right;margin-top:5px}
+.mobile-user-links li{list-style-type:none;display:inline-block;margin-top:5px;margin-left:5px}
+.mobile-user-links li a{list-style-type:none;display:inline-block;height:40px;width:40px}
+.mobile-notifications{position:relative}
+.mobile-notifications-button{display:inline-block;height:40px;width:40px;background-size:30px;background-image:url(../img/notifications-button.png);opacity:.25;transition:all .2s}
+.mobile-notifications-button:hover{opacity:.4}
+.mobile-notifications-count{display:inline-block;height:20px;min-width:20px;width:auto;background-color:#ff8b94;position:absolute;padding:0 5px;border-radius:20px;color:#fff;line-height:20px;font-size:12px;font-weight:700;text-align:center;top:10px;right:35px}
+.main-articles-arrow,.mobile-profile-button{display:inline-block;border-radius:50%;background-position:center;background-repeat:no-repeat;float:right}
+.mobile-profile-button{margin-top:5px;margin-right:5px;width:30px;height:30px;background-color:#eee;background-image:url(../img/gradient-sea.jpg)}
+.main-content{padding-top:80px;background-color:#fafafa;height:4000px;max-width:1440px}
+.content-controll,.post-wrapper{background-color:#fff}
+.content-info{height:50px}
+.content-controll{height:auto;width:100%;padding:20px 35px;margin-bottom:15px}
+.main-articles-filter{display:inline-block;position:relative;width:auto}
+.main-articles-selected{font-size:20px;font-weight:700;color:#9a9a9a;display:inline-block}
+.main-articles-arrow{width:25px;height:25px;background-size:16px;background-image:url(../img/right-arrow.png);transition:all .2s ease-in-out;transform:rotate(0)}
+.post-author-info .avatar,.post-cover,.related-post-cover{background-size:cover;background-position:center}
+.main-articles-arrow.rotated{transform:rotate(90deg);transition:all .2s ease-in-out}
+.main-articles-options{display:none;position:absolute;top:0}
+.main-articles-option{height:38px;line-height:38px}
 .content{width:80%;margin:0 auto;z-index:0;height:auto}
 .post-cover{width:100%;height:350px;background-image:url(../img/wallpaper-1bae1.jpg)}
 .post{height:auto}
@@ -166,7 +197,7 @@ aside{width:100%;height:500px}
 .comments-controll{display:inline-block;height:auto;float:right}
 .comment-controll-dropdown{display:inline-block;position:relative;color:#adadad;font-weight:700;cursor:pointer;width:auto;height:34px}
 .comment-controll-dropdown .dropdown-selected{display:inline-block;width:auto;height:34px;line-height:34px}
-.comment-controll-dropdown .dropdown-arrow{display:inline-block;width:28px;height:34px;float:right;border-radius:50%;background-size:16px;background-image:url(../img/right-arrow.png);background-repeat:no-repeat;transition:all .2s ease-in-out;transform:rotate(0)}
+.comment-controll-dropdown .dropdown-arrow{display:inline-block;width:28px;height:34px;float:right;border-radius:50%;background-position:center;background-size:16px;background-image:url(../img/right-arrow.png);background-repeat:no-repeat;transition:all .2s ease-in-out;transform:rotate(0)}
 .comment-controll-dropdown .dropdown-arrow.rotated{transform:rotate(90deg);transition:all .2s ease-in-out}
 .comment-controll-dropdown .dropdown-options{top:34px;right:0;position:absolute;transition:all .2s ease-in-out;opacity:0;visibility:hidden;border-radius:4px;z-index:4}
 .comment-controll-dropdown .dropdown-options.show{transition:all .2s ease-in-out;opacity:1;visibility:visible}
@@ -178,7 +209,7 @@ aside{width:100%;height:500px}
 .comment-header{height:40px;position:relative}
 .comment-author{width:auto;display:inline-block}
 .comment-author a{display:inline-block;font-weight:700;color:#9a9a9a;text-decoration:none}
-.comment-author-avatar{height:40px;width:40px;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;position:absolute}
+.comment-author-avatar{height:40px;width:40px;background-position:center;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;position:absolute}
 .comment-header .comment-author a p{margin-left:50px}
 .comment-header .comment-author a p.name{font-size:16px;line-height:16px;height:16px;margin-top:5px;transition:all .2s}
 .comment-header .comment-author a:hover p.name{color:#737373}
@@ -239,6 +270,7 @@ aside{width:100%;height:500px}
 .navigation-links{padding:0 20px}
 .mobile-nav{display:block}
 .main-content{padding-top:60px}
+.content-controll{padding:15px 20px}
 .divider{width:100px}
 .card-wrap{padding:10px}
 .post{width:100%;border:none}

@@ -122,3 +122,11 @@ window.addEventListener('resize', function(e){
 	}
 });
 
+var notificationButton = document.querySelector('.notifications-wrapper') || null;
+
+if (notificationButton){
+	var notifications = document.querySelector('.notifications');
+	notificationButton.addEventListener('click', function(e){
+		notifications.classList.toggle('show');
+	});
+}
