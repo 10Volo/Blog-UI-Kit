@@ -1,3 +1,3 @@
-[Blog UI Kit](https://kostyshyn.github.io/Blog-UI-Kit/app/)
+[Blog UI Kit](https://kostyshyn.github.io/Blog-UI-Kit/app/main.html)
 
 
