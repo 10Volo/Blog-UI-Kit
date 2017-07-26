@@ -16,14 +16,14 @@
 			<div class="desktop-nav">
 				<ul class="main-pages-links">
 					<li><a href="main.html" class="desktop-nav-link">Home</a></li>
-					<li><a href="" class="desktop-nav-link">Articles</a></li>
+					<li><a href="post.html" class="desktop-nav-link">Articles</a></li>
 					<li><a href="forum.html" class="desktop-nav-link active">Forum</a></li>
 				</ul>
-				<ul class="auth-pages-links">
+				<ul class="auth-pages-links" style="display: block;">
 					<li><a href="login.html" class="button">Login</a></li>
 					<li><a href="register.html" class="button main-button">Register</a></li>
 				</ul>
-				<ul class="user-links">
+				<ul class="user-links" style="display: none;">
 					<li>
 						<div class="notifications-wrapper">
 							<div class="notifications-button">
@@ -84,11 +84,11 @@
 						</ul>
 					</div>
 				</div>
-				<ul class="mobile-auth-links">
+				<ul class="mobile-auth-links" style="display: block;">
 					<li><a href="login.html" class="login-link no-select">Login</a></li>
 					<li><a href="register.html" class="register-link no-select">Register</a></li>
 				</ul>
-				<ul class="mobile-user-links no-select">
+				<ul class="mobile-user-links no-select" style="display: none;">
 					<li><a href="" class="mobile-notifications">
 						<div class="mobile-notifications-button">
 								
@@ -97,7 +97,7 @@
 							3
 						</div>
 					</a></li>
-					<li><a href="">
+					<li><a href="profile.html">
 						<div class="mobile-profile-button">
 							
 						</div>
@@ -112,12 +112,26 @@
 	</div>
 
 	<div class="main-content">
-		<div class="forum">
-			
-			<div class="topic box">
-				
+		<div class="content">
+		<div class="row">
+			<div class="col-4">
+				<div class="forum-navigation-wrapper">
+					<div class="forum-navigation box">
+						<h1>Forum</h1>
+					</div>
+				</div>
 			</div>
-			
+			<div class="col-8">
+				<div class="forum">
+				
+					<div class="topic box">
+						
+					</div>
+					
+				</div>				
+			</div>
+		</div>
+
 		</div>
 	</div>
 
