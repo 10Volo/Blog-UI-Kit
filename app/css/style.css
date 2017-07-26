@@ -234,7 +234,7 @@ aside {
 	text-decoration: none;
 	padding: 0px 15px;
 	color: #a1a1a1;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 36px;
 }
 .card-dropdown a:hover {
@@ -447,7 +447,7 @@ aside {
 }
 
 .desktop-nav .desktop-nav-link.active {
-	border-bottom: 5px solid #40e0d0;
+	border-bottom: 5px solid #41ede1;
 	color: #737373;
 }
 .main-pages-links {
@@ -485,7 +485,7 @@ aside {
 	width: 40px;
 	/*background-color: #eee;*/
 	background-position: center;
-	background-size: 30px;
+	background-size: 27px;
 	background-image: url(../img/notifications-button.png);
 	background-repeat: no-repeat;
 	opacity: .25;
@@ -667,6 +667,7 @@ aside {
 	left: -20px;
 	transform: translateX(-220px);
 	transition: .35s ease-in-out;
+	border-top: 1px solid #eee;
 	/*background-color: #fafafa;*/
 }
 .hidden-nav-links.hidden {
@@ -688,7 +689,7 @@ aside {
 	color: #9a9a9a;
 }
 .hidden-nav-links ul li a.active {
-	border-bottom: 3px solid #40e0d0;
+	border-bottom: 3px solid #41ede1;
 	color: #737373;
 }
 
@@ -726,7 +727,6 @@ aside {
 	list-style-type: none;
 	display: inline-block;
 	margin-top: 5px;
-	margin-left: 5px;
 }
 .mobile-user-links li a {
 	list-style-type: none;
@@ -742,7 +742,7 @@ aside {
 	height: 40px;
 	width: 40px;
 	background-position: center;
-	background-size: 30px;
+	background-size: 27px;
 	background-image: url(../img/notifications-button.png);
 	background-repeat: no-repeat;
 	opacity: .25;
@@ -1332,7 +1332,7 @@ aside {
 	text-decoration: none;
 	padding: 0px 15px;
 	color: #adadad;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	line-height: 40px;
 }
 .comment-dropdown a:hover {
