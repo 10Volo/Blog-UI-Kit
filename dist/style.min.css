@@ -54,7 +54,6 @@ aside{width:100%;height:500px}
 .tag:hover{background-color:#d6d6d6}
 .tag a{color:inherit}
 .post-comment,.post-like,.post-view{height:40px;width:auto}
-.mobile-notifications-count,.notifications-count{min-width:20px;font-weight:700;text-align:center}
 .post-comment span.count,.post-like span.count,.post-view span.count{color:#c1c1c1;font-size:14px;font-weight:700}
 .post-like button.post-like-wrap{margin:10px 10px 10px 20px}
 .post-comment{cursor:pointer;height:40px;width:auto}
@@ -83,8 +82,9 @@ aside{width:100%;height:500px}
 .user-links{display:inline-block;width:auto;float:right;padding-right:15px}
 .notifications-wrapper{display:inline-block;margin-top:20px;margin-right:5px;height:40px;width:auto;position:relative;cursor:pointer}
 .notifications-button{display:inline-block;height:40px;width:40px;background-size:27px;background-image:url(../img/notifications-button.png);opacity:.25;transition:all .2s}
+.mobile-notifications-count,.notifications-count{height:18px;min-width:18px;box-shadow:0 0 0 2px #fff;font-weight:700;text-align:center}
 .notifications-button:hover{opacity:.4}
-.notifications-count{display:inline-block;height:20px;width:auto;background-color:#ff8b94;position:absolute;padding:0 5px;border-radius:20px;color:#fff;line-height:20px;font-size:12px;top:10px;right:35px}
+.notifications-count{display:inline-block;width:auto;background-color:#ff8b94;position:absolute;padding:0 5px;border-radius:20px;color:#fff;line-height:18px;font-size:11px;top:12px;right:27px}
 .notifications{position:absolute;top:50px;right:0;width:250px;min-height:60px;border-radius:4px;visibility:hidden;opacity:0;transition:.2s ease-in-out}
 .notification,.profile-button-name{display:inline-block;transition:.2s}
 .notifications.show{opacity:1;visibility:visible}
@@ -125,8 +125,8 @@ aside{width:100%;height:500px}
 .mobile-notifications{position:relative}
 .mobile-notifications-button{display:inline-block;height:40px;width:40px;background-size:27px;background-image:url(../img/notifications-button.png);opacity:.25;transition:all .2s}
 .mobile-notifications-button:hover{opacity:.4}
-.mobile-notifications-count{display:inline-block;height:20px;width:auto;background-color:#ff8b94;position:absolute;padding:0 5px;border-radius:20px;color:#fff;line-height:20px;font-size:12px;top:10px;right:35px}
-.main-articles-arrow,.mobile-profile-button{border-radius:50%;background-position:center;background-repeat:no-repeat;float:right}
+.mobile-notifications-count{display:inline-block;width:auto;background-color:#ff8b94;position:absolute;padding:0 5px;border-radius:18px;color:#fff;line-height:20px;font-size:11px;top:12px;right:27px}
+.main-articles-arrow,.mobile-profile-button{border-radius:50%;background-position:center;float:right;background-repeat:no-repeat}
 .mobile-profile-button{margin-right:5px;width:30px;height:30px;background-color:#eee;background-image:url(../img/gradient-sea.jpg)}
 .main-content{padding-top:80px;background-color:#fafafa;height:4000px;max-width:1440px}
 .content-controll,.post-wrapper{background-color:#fff}
@@ -223,7 +223,7 @@ aside{width:100%;height:500px}
 .comment-dropdown.show{visibility:visible;opacity:1;z-index:4}
 .comment-dropdown a{display:block;height:40px;min-width:80px;width:auto;text-decoration:none;padding:0 15px;color:#adadad;line-height:40px}
 .comment-dropdown a:hover{background-color:#f1f1f1}
-.comment-body{min-height:40px;height:auto;padding:10px 20px 0 50px}
+.comment-body{min-height:40px;height:auto;padding:10px 10px 0 50px}
 .comment-body p{color:#737373;font-size:16px;line-height:24px}
 .comment-controll{height:43px;border-bottom:2px solid #eee}
 .comment-controll .comment-reply-wrapper{display:inline-block;height:40px;width:auto;padding-top:5px;cursor:pointer;text-decoration:none}
@@ -232,7 +232,7 @@ aside{width:100%;height:500px}
 .comment-controll .comment-reply{height:30px;width:30px;background-position:center;background-size:cover;background-image:url(../img/gradient-sea.jpg);border-radius:50%;display:inline-block}
 .forum-navigation,.topic{width:100%;border-radius:4px}
 .comment-controll div button{cursor:pointer;color:#c1c1c1;font-weight:700;font-size:16px;background-color:transparent;outline:0;border:none;border-radius:0}
-.comment-controll .comment-like{display:inline-block;float:right}
+.comment-controll .comment-like{display:inline-block;margin-left:40px}
 .comment-controll .comment-like .post-like-wrap{margin:10px}
 .forum{padding:40px 20px 40px 10px}
 .forum-navigation-wrapper{padding:40px 10px 10px 20px}

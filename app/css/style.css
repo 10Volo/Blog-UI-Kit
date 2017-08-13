@@ -498,20 +498,22 @@ aside {
 }
 .notifications-count {
 	display: inline-block;
-	height: 20px;
-	min-width: 20px;
+	height: 18px;
+	min-width: 18px;
 	width: auto;
 	background-color: #ff8b94;
 	position: absolute;
 	padding: 0px 5px;
 	border-radius: 20px;
 	color: #fff;
-	line-height: 20px;
-	font-size: 12px;
+	line-height: 18px;
+	font-size: 11px;
 	font-weight: bold;
 	text-align: center;
-	top: 10px;
-	right: 35px;
+	top: 12px;
+	right: 27px;
+	/*border: 2px solid white;*/
+	box-shadow: 0px 0px 0px 2px white;
 	/*display: none;*/
 }
 .notifications {
@@ -755,20 +757,22 @@ aside {
 }
 .mobile-notifications-count {
 	display: inline-block;
-	height: 20px;
-	min-width: 20px;
+	height: 18px;
+	min-width: 18px;
 	width: auto;
 	background-color: #ff8b94;
 	position: absolute;
 	padding: 0px 5px;
-	border-radius: 20px;
+	border-radius: 18px;
 	color: #fff;
 	line-height: 20px;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
 	text-align: center;
-	top: 10px;
-	right: 35px;
+	top: 12px;
+	right: 27px;
+	/*border: 2px solid white;*/
+	box-shadow: 0px 0px 0px 2px white;
 	/*display: none;*/
 }
 .mobile-profile-button {
@@ -1346,7 +1350,7 @@ aside {
 	height: auto;
 /*	padding-top: 15px;
 	padding-bottom: 10px;*/
-	padding: 10px 20px 0px 50px;
+	padding: 10px 10px 0px 50px;
 }
 .comment-body p {
 	color: #737373;
@@ -1402,7 +1406,8 @@ aside {
 }
 .comment-controll .comment-like {
 	display: inline-block;
-	float: right;
+	margin-left: 40px;
+	/*float: right;*/
 }
 .comment-controll .comment-like .post-like-wrap {
 	margin: 10px 10px;
